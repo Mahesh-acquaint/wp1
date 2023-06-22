@@ -654,3 +654,10 @@ if ( ! function_exists( 'wp_get_list_item_separator' ) ) :
 		return __( ', ', 'twentytwentyone' );
 	}
 endif;
+
+
+function current_template_name() {
+    global $template;
+    print_r( $template );
+  }
+ add_action( 'wp_footer', 'current_template_name' );

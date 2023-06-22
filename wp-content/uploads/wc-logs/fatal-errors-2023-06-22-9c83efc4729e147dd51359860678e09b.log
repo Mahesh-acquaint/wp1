@@ -1,0 +1,400 @@
+2023-06-22T05:30:02+00:00 CRITICAL syntax error, unexpected identifier "im" in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/single-product.php on line 21
+
+2023-06-22T05:30:03+00:00 CRITICAL syntax error, unexpected identifier "im" in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/single-product.php on line 21
+
+2023-06-22T06:46:51+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /var/www/html/wp1/wp-includes/formatting.php on line 234
+
+2023-06-22T06:46:53+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /var/www/html/wp1/wp-includes/formatting.php on line 239
+
+2023-06-22T06:47:06+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /var/www/html/wp1/wp-includes/formatting.php on line 239
+
+2023-06-22T06:47:07+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /var/www/html/wp1/wp-includes/formatting.php on line 239
+
+2023-06-22T06:47:29+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /var/www/html/wp1/wp-includes/formatting.php on line 233
+
+2023-06-22T06:47:49+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /var/www/html/wp1/wp-includes/formatting.php on line 233
+
+2023-06-22T08:37:05+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bbloomer_save_msrp" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-includes/post.php(4704): do_action()
+#3 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#4 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#5 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#6 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+
+2023-06-22T08:37:49+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bbloomer_save_msrp" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-includes/post.php(4704): do_action()
+#3 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#4 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#5 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#6 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+
+2023-06-22T08:39:47+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bbloomer_save_msrp" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-includes/post.php(4704): do_action()
+#3 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#4 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#5 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#6 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+
+2023-06-22T09:01:05+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:02:30+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:05+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:08+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:09+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:09+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:09+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:10+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:10+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:10+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:50+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:50+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:51+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:51+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:03:51+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:04:07+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:04:08+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:04:13+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:04:14+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:04:14+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:04:15+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 101
+
+2023-06-22T09:14:45+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:92
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 92
+
+2023-06-22T09:14:57+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:92
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 92
+
+2023-06-22T09:14:59+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:92
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 92
+
+2023-06-22T09:29:03+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 116
+
+2023-06-22T09:29:21+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 116
+
+2023-06-22T09:30:57+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 120
+
+2023-06-22T09:31:04+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 120
+
+2023-06-22T09:31:57+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 120
+
+2023-06-22T09:32:39+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:32:39+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:32:40+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:33:24+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:33:24+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:33:25+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:33:49+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:33:50+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:33:50+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:33:50+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:125) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:34:13+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:34:13+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:34:14+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:34:27+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:34:33+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:34:41+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:34:42+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:00+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:00+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:05+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:06+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:07+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:07+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:07+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:21+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:22+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:22+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:30+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:31+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:31+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:31+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:31+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:32+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:32+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:34+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:126) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:50+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:129) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:50+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:129) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:51+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:129) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:51+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:129) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:35:57+00:00 CRITICAL Cannot redeclare woocommerce_wp_select() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:128) in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/wc-meta-box-functions.php on line 193
+
+2023-06-22T09:41:19+00:00 CRITICAL Uncaught TypeError: Illegal offset type in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:149
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woo_add_custom_general_fields()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 149
+
+2023-06-22T09:42:40+00:00 CRITICAL Uncaught TypeError: Illegal offset type in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:151
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woo_add_custom_general_fields()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 151
+
+2023-06-22T10:06:00+00:00 CRITICAL syntax error, unexpected identifier "Fields" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 149
+
+2023-06-22T10:08:00+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 165
+
+2023-06-22T10:52:24+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 164
+
+2023-06-22T10:52:26+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 164
+
+2023-06-22T10:52:32+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 164
+
+2023-06-22T10:57:42+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T10:58:42+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:00:43+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:43+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:47+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:49+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:49+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:51+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:51+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:51+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:51+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:52+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:02:58+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:03:19+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:03:19+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:03:19+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:03:20+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:04:24+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:04:24+00:00 CRITICAL Cannot use empty array elements in arrays in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 168
+
+2023-06-22T11:18:20+00:00 CRITICAL Uncaught Error: Call to undefined function update_meta_data() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:186
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_save_custom_text_area_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 186
+
+2023-06-22T11:19:11+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on bool in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:184
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_save_custom_text_area_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 184
+
+2023-06-22T11:19:20+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on bool in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:184
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_save_custom_text_area_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 184
+
+2023-06-22T11:19:48+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on bool in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:184
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_save_custom_text_area_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 184
+
+2023-06-22T11:20:46+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on bool in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:183
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_save_custom_text_area_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 183
+
+2023-06-22T11:22:20+00:00 CRITICAL syntax error, unexpected variable "$product" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 184
+
+2023-06-22T11:23:05+00:00 CRITICAL Uncaught Error: Call to undefined function update_meta_data() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:182
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_save_custom_text_area_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 182
+
