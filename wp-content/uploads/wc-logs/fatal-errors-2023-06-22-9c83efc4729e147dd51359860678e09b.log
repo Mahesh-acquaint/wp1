@@ -398,3 +398,217 @@ Stack trace:
 #11 {main}
   thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 182
 
+2023-06-22T11:55:10+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:222
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 222
+
+2023-06-22T11:58:09+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_wp_multi_checkbox() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:209
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 209
+
+2023-06-22T11:58:12+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_wp_multi_checkbox() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:209
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 209
+
+2023-06-22T11:58:39+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_wp_multi_checkbox() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:231
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): add_custom_settings_fields()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 231
+
+2023-06-22T11:58:41+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_wp_multi_checkbox() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:231
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): add_custom_settings_fields()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 231
+
+2023-06-22T11:58:43+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_wp_multi_checkbox() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:231
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): add_custom_settings_fields()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 231
+
+2023-06-22T12:02:29+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:230
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 230
+
+2023-06-22T12:04:40+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:230
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 230
+
+2023-06-22T12:04:48+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:230
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 230
+
+2023-06-22T12:05:38+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:230
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 230
+
+2023-06-22T12:07:36+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:230
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 230
+
+2023-06-22T12:08:18+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:232
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 232
+
+2023-06-22T12:08:33+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:232
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 232
+
+2023-06-22T12:08:59+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:232
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_checkbox_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 232
+
+2023-06-22T12:28:48+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 224
+
+2023-06-22T12:37:41+00:00 CRITICAL syntax error, unexpected token "function" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 26
+

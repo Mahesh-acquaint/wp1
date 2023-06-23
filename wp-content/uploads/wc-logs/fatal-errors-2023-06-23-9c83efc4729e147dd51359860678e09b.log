@@ -1,0 +1,313 @@
+2023-06-23T04:39:57+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:277
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): woocommerce_add_custom_radio_button_general_section_single_product()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 277
+
+2023-06-23T05:09:16+00:00 CRITICAL syntax error, unexpected token "}" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 279
+
+2023-06-23T05:19:29+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 285
+
+2023-06-23T05:34:26+00:00 CRITICAL syntax error, unexpected token "}" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 296
+
+2023-06-23T05:35:31+00:00 CRITICAL syntax error, unexpected token "}" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 297
+
+2023-06-23T05:35:34+00:00 CRITICAL syntax error, unexpected token "}" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 297
+
+2023-06-23T05:36:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function update_post_meta(), 2 passed in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 296 and at least 3 expected in /var/www/html/wp1/wp-includes/post.php:2517
+Stack trace:
+#0 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(296): update_post_meta()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_input_text_inventory_section_single_product()
+#2 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#3 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#9 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#10 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#11 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#12 {main}
+  thrown in /var/www/html/wp1/wp-includes/post.php on line 2517
+
+2023-06-23T05:37:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function update_post_meta(), 2 passed in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 296 and at least 3 expected in /var/www/html/wp1/wp-includes/post.php:2517
+Stack trace:
+#0 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(296): update_post_meta()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_input_text_inventory_section_single_product()
+#2 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#3 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#9 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#10 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#11 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#12 {main}
+  thrown in /var/www/html/wp1/wp-includes/post.php on line 2517
+
+2023-06-23T05:37:39+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function update_post_meta(), 2 passed in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 296 and at least 3 expected in /var/www/html/wp1/wp-includes/post.php:2517
+Stack trace:
+#0 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(296): update_post_meta()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_input_text_inventory_section_single_product()
+#2 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#3 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#9 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#10 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#11 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#12 {main}
+  thrown in /var/www/html/wp1/wp-includes/post.php on line 2517
+
+2023-06-23T05:37:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function update_post_meta(), 2 passed in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 296 and at least 3 expected in /var/www/html/wp1/wp-includes/post.php:2517
+Stack trace:
+#0 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(296): update_post_meta()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_input_text_inventory_section_single_product()
+#2 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#3 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#9 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#10 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#11 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#12 {main}
+  thrown in /var/www/html/wp1/wp-includes/post.php on line 2517
+
+2023-06-23T05:41:32+00:00 CRITICAL syntax error, unexpected token "}" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 299
+
+2023-06-23T05:45:33+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 300
+
+2023-06-23T05:49:33+00:00 CRITICAL syntax error, unexpected token "}" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 305
+
+2023-06-23T05:53:34+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 315
+
+2023-06-23T05:55:34+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 315
+
+2023-06-23T05:57:35+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 315
+
+2023-06-23T05:58:14+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 315
+
+2023-06-23T05:58:15+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 315
+
+2023-06-23T05:58:15+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:130) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 315
+
+2023-06-23T06:13:38+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_text_area_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:175) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 366
+
+2023-06-23T06:21:19+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_checkbox_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:221) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 408
+
+2023-06-23T06:21:39+00:00 CRITICAL Cannot redeclare woocommerce_display_custom_checkbox_field_general_section() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:230) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 418
+
+2023-06-23T06:29:48+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_general_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:242) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 425
+
+2023-06-23T06:31:29+00:00 CRITICAL syntax error, unexpected identifier "print_r", expecting "," or ";" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 455
+
+2023-06-23T06:31:29+00:00 CRITICAL syntax error, unexpected identifier "print_r", expecting "," or ";" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 455
+
+2023-06-23T06:31:30+00:00 CRITICAL syntax error, unexpected identifier "print_r", expecting "," or ";" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 455
+
+2023-06-23T06:57:12+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_input_text_inventory_section_single_product_save() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:329) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 524
+
+2023-06-23T06:57:44+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_input_text_inventory_section_single_product_save() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:329) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 524
+
+2023-06-23T07:17:53+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_checkbox_inventoy_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:402) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 596
+
+2023-06-23T07:23:49+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:23:49+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:25:49+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:25:49+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:27:49+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:27:50+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:29:16+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:29:17+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:29:27+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:29:49+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:29:50+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:00+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:01+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:01+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:01+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:01+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:02+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:02+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:08+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:09+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T07:30:09+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_inventory_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:423) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 614
+
+2023-06-23T08:45:21+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_field_link_product_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:462) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 662
+
+2023-06-23T08:46:03+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_field_link_product_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:462) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 662
+
+2023-06-23T08:58:05+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_linked_product_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:500) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 692
+
+2023-06-23T08:59:33+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_input_text_linked_product_section_single_product_save() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:523) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 708
+
+2023-06-23T09:00:06+00:00 CRITICAL Cannot redeclare woocommerce_display_custom_select_field_linked_product_section() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:532) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 718
+
+2023-06-23T09:04:06+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_text_area_linked_product_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:547) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 733
+
+2023-06-23T09:05:39+00:00 CRITICAL Cannot redeclare woocommerce_display_custom_text_area_field_linked_product_section() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:571) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 756
+
+2023-06-23T09:21:55+00:00 CRITICAL Cannot redeclare woocommerce_display_custom_radio_btn_field_linked_section() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:639) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 826
+
+2023-06-23T09:35:13+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_attributes_select_section_single() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:703) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 857
+
+2023-06-23T09:38:43+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_attribute_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:690) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 877
+
+2023-06-23T09:40:13+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_advanced_select_section_single() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:853) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 892
+
+2023-06-23T09:40:29+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_advanced_select_section_single() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:853) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 892
+
+2023-06-23T09:40:30+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_advanced_select_section_single() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:853) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 892
+
+2023-06-23T09:40:41+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_advanced_select_section_single() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:853) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 892
+
+2023-06-23T09:40:43+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_advanced_select_section_single() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:853) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 892
+
+2023-06-23T09:41:12+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_advanced_select_section_single() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:853) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 892
+
+2023-06-23T09:42:07+00:00 CRITICAL Cannot redeclare woocommerce_display_custom_select_field_advanced_section() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:863) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 902
+
+2023-06-23T09:42:13+00:00 CRITICAL Cannot redeclare woocommerce_display_custom_select_field_advanced_section() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:863) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 902
+
+2023-06-23T09:48:07+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_text_area_attribute_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:726) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 921
+
+2023-06-23T09:48:14+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_text_area_attribute_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:726) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 921
+
+2023-06-23T09:50:14+00:00 CRITICAL Cannot redeclare woocommerce_display_custom_text_area_field_attributes_section() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:750) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 945
+
+2023-06-23T09:56:15+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_radio_button_attributes_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:795) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 985
+
+2023-06-23T10:00:16+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1036
+
+2023-06-23T10:01:19+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:02:16+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:02:19+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:03:19+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:16+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:19+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:31+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:31+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:48+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:48+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:50+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:51+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:04:51+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_input_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:838) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1035
+
+2023-06-23T10:20:18+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "my_custom_tab_action" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(48): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#4 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#5 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#6 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#7 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 308
+
+2023-06-23T10:20:57+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "my_custom_tab_action" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(48): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#4 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#5 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#6 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#7 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 308
+
+2023-06-23T10:20:59+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "my_custom_tab_action" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(48): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#4 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#5 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#6 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#7 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 308
+
+2023-06-23T10:21:09+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "my_custom_tab_action" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(48): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#4 /var/www/html/wp1/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#5 /var/www/html/wp1/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#6 /var/www/html/wp1/wp-admin/post.php(206): require('...')
+#7 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 308
+
+2023-06-23T10:45:45+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_radio_button_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:999) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1060
+
+2023-06-23T10:58:50+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:876) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1084
+
+2023-06-23T10:58:56+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:876) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1084
+
+2023-06-23T10:59:06+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:876) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1084
+
+2023-06-23T10:59:06+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:876) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1084
+
+2023-06-23T10:59:22+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:876) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1084
+
+2023-06-23T11:05:17+00:00 CRITICAL Cannot redeclare woocommerce_add_custom_select_field_custom_tab_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1081) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-23T11:07:44+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_advanced_select_section() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:890) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1100
+
+2023-06-23T12:08:24+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_text_area_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:928) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1128
+
+2023-06-23T12:08:31+00:00 CRITICAL Cannot redeclare woocommerce_save_custom_text_area_advanced_section_single_product() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:928) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1128
+
