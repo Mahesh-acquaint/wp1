@@ -71,3 +71,137 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
  */
 
 
+function blog_post_filter_vai_cat_function(){ ?>
+   <style type="text/css">
+    .loader
+    {
+        display: none;
+        height: 8%;
+        width: 8%;
+    }
+   </style> 
+<div class="page-content">
+    <div class="showcategory-page-section">
+        <div class="container">
+            <div class="blogpost-img">
+                <?php 
+                        $defult_arg = array(
+                            'post_type'      =>'product',
+                            'posts_per_page' =>9,
+                            'orderby'        => 'name',
+                            'order'          => 'ASC',
+                            'paged'=>1,
+                        );
+                        $default_posts=new WP_Query($defult_arg);
+                        ?>
+                        <div class="category_response_show" id="category_response_show" data-count='<?php echo ceil($default_posts->found_posts/2); ?>'>
+                               <div class="main-blog-box row">
+                                <?php
+                                if($default_posts->have_posts()){
+                                    while($default_posts->have_posts()){
+                                        $default_posts->the_post();
+                                        $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'full' );
+                                        ?> 
+                                        <div class="three-blog col-4">
+                                            <div class="inner-blogs">
+                                                <div class="postbg-img" style="background-image:url('<?php echo $url; ?>')"></div>
+                                                <div class="blog-content">
+                                                    <h2><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h2>
+                                                </div>
+                                            </div>
+                                        </div>  <?php                                      
+                                    }
+                                }
+                                wp_reset_postdata();
+                            ?>
+                            </div>
+                        </div>
+            </div>
+
+            <div class="btn-group text-center loadmore-btndiv">
+                <button class="btn btn-primary load_more" id="load_more">Load More</button>
+            </div>  
+        </div>
+    </div> 
+</div>
+
+<!-- LOAD More Blog Script----------------------------------------------------- -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script type="text/javascript" >
+    jQuery(document).ready(function($) {
+            page=4;  
+            var post_count=jQuery('#category_response_show').data('count');
+            var aj_urlx='<?php echo admin_url('admin-ajax.php'); ?>';
+
+        jQuery('.load_more').click(function (){
+        	//alert('ok');
+            jQuery.ajax({
+              url  :aj_urlx,
+              type : 'POST',
+              data: 
+              {
+                'action':'my_loadmore_action',
+                'page':page
+              },
+              beforeSend:function()
+                          {
+                                //jQuery('.loader').show();
+                          },
+              success: function(load_more_res) {
+               jQuery('#category_response_show').append(load_more_res);
+                   if(post_count == page){
+                    jQuery('.load_more').hide();
+                   }
+                   page++;
+                   jQuery('.loader').hide();
+                   
+              },
+            });
+         });
+    });
+</script> 
+
+    <?php
+}
+add_shortcode('blog_post_filter_vai_cat','blog_post_filter_vai_cat_function'); 
+
+
+add_action( 'wp_ajax_my_loadmore_action','my_loadmore_action_function' );
+add_action( 'wp_ajax_nopriv_my_loadmore_action','my_loadmore_action_function');
+
+function my_loadmore_action_function(){
+    $page_more=$_POST['page'];
+    $load_arg = array(
+                       'post_type'=>'product',
+                       'posts_per_page' => 3,
+                       'paged'=>$page_more ,
+                       'orderby'   => 'name',
+                       'order'  => 'ASC',
+
+                      );
+                    $load_arg_posts=new WP_Query($load_arg);
+                   echo '<div class="main-blog-box row">';     
+                    if($load_arg_posts->have_posts()){
+                        while($load_arg_posts->have_posts()){
+                            $load_arg_posts->the_post();
+                            $loadimage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                             ?>
+                            <div class="three-blog col-4">
+                                <div class="inner-blogs">
+                                    <div class="postbg-img" style="background-image: url('<?php echo $loadimage[0]; ?>');"></div>
+                                    <div class="blog-content">
+                                        <h2><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?><br></a></h2>
+                                    
+                                    </div>
+                                 </div>
+                            </div>
+                            <?php
+                        }
+                        wp_reset_postdata();
+                    }
+                    echo '</div> ';
+    die();
+}
+
+
+?>

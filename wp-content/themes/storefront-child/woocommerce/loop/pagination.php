@@ -2,7 +2,7 @@
 /**
  * Pagination - Show numbered pagination for catalog pages
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/loop/pagination.php.
+ * This template can be overridden by copying it to /woocommerce/loop/pagination.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -28,24 +28,27 @@ if ( $total <= 1 ) {
 	return;
 }
 ?>
-<nav class="woocommerce-pagination" id="test_class1">
+
+<nav class="woocommerce-pagination test_class">
 	<?php
-	echo paginate_links(
-		apply_filters(
-			'woocommerce_pagination_args',
-			array( // WPCS: XSS ok.
-				'base'      => $base,
-				'format'    => $format,
-				'add_args'  => false,
-				'current'   => max( 1, $current ),
-				'total'     => $total,
-				'prev_text' => is_rtl() ? '&rarr;' : '&larr;',
-				'next_text' => is_rtl() ? '&larr;' : '&rarr;',
-				'type'      => 'list',
-				'end_size'  => 3,
-				'mid_size'  => 3,
-			)
-		)
-	);
+	// echo paginate_links(
+	// 	apply_filters(
+	// 		'woocommerce_pagination_args',
+	// 		array( // WPCS: XSS ok.
+	// 			'base'      => $base,
+	// 			'format'    => $format,
+	// 			'add_args'  => false,
+	// 			'current'   => max( 1, $current ),
+	// 			'total'     => $total,
+	// 			'prev_text' => is_rtl() ? '&rarr;' : '&larr;',
+	// 			'next_text' => is_rtl() ? '&larr;' : '&rarr;',
+	// 			'type'      => 'list',
+	// 			'end_size'  => 3,
+	// 			'mid_size'  => 3,
+	// 		)
+	// 	)
+	// );
 	?>
+	<?php echo do_shortcode('[load_more_product]'); ?>
 </nav>
+

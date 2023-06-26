@@ -1,0 +1,422 @@
+2023-06-26T07:03:34+00:00 CRITICAL Uncaught Error: Call to undefined function card_for_this_post_type() in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php:6
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/wp1/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php on line 6
+
+2023-06-26T07:03:40+00:00 CRITICAL Uncaught Error: Call to undefined function card_for_this_post_type() in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php:6
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/wp1/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php on line 6
+
+2023-06-26T07:03:41+00:00 CRITICAL Uncaught Error: Call to undefined function card_for_this_post_type() in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php:6
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/wp1/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php on line 6
+
+2023-06-26T07:03:41+00:00 CRITICAL Uncaught Error: Call to undefined function card_for_this_post_type() in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php:6
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/wp1/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php on line 6
+
+2023-06-26T10:25:09+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: array / int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1203
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1203
+
+2023-06-26T10:25:51+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: WP_Query / int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1203
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1203
+
+2023-06-26T10:25:51+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: WP_Query / int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1203
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1203
+
+2023-06-26T10:25:52+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: WP_Query / int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1203
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1203
+
+2023-06-26T10:25:52+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: WP_Query / int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1203
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1203
+
+2023-06-26T10:25:52+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: WP_Query / int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1203
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1203
+
+2023-06-26T10:26:38+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: array / int in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1205
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1205
+
+2023-06-26T11:33:56+00:00 CRITICAL Uncaught Error: Object of class stdClass could not be converted to string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1199
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1199
+
+2023-06-26T11:33:58+00:00 CRITICAL Uncaught Error: Object of class stdClass could not be converted to string in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1199
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/shortcodes.php(355): load_more_product_function()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/loop/pagination.php(52): do_shortcode()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1550): wc_get_template()
+#6 /var/www/html/wp1/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(254): woocommerce_pagination()
+#7 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_woocommerce_pagination()
+#8 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#9 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#10 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(57): do_action()
+#11 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#12 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#13 /var/www/html/wp1/index.php(17): require('...')
+#14 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1199
+
+2023-06-26T13:34:06+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-26T13:34:11+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-26T13:34:31+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-26T13:49:27+00:00 CRITICAL syntax error, unexpected token ")" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 879
+
+2023-06-26T13:49:43+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(880): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:49:45+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(880): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:49:45+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(880): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:49:46+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(880): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:49:46+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(880): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:49:46+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(880): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:49:46+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(880): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:49:46+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(880): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:54:00+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(881): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:54:01+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(881): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:54:01+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(881): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:54:02+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(881): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+
+2023-06-26T13:54:07+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, int given in /var/www/html/wp1/wp-includes/class-wp-query.php:2194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-query.php(2194): array_map()
+#1 /var/www/html/wp1/wp-includes/class-wp-query.php(3787): WP_Query->get_posts()
+#2 /var/www/html/wp1/wp-includes/class-wp-query.php(3919): WP_Query->query()
+#3 /var/www/html/wp1/wp-content/themes/storefront-child/functions.php(881): WP_Query->__construct()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_ajax_load_more_action_function()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-admin/admin-ajax.php(203): do_action()
+#8 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-query.php on line 2194
+

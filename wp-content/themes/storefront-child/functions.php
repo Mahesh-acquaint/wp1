@@ -79,7 +79,8 @@ function add_custom_text_after_all_product_title( $title, $id ) {
 /*Input Text Field*/
 /*Add*/
 function woocommerce_add_custom_field_general_section_single_product(){
-    global $woocommerce, $post;
+   
+    global $woocommerce, $post, $product;
     
     //Custom Product Text Field
     woocommerce_wp_text_input(
@@ -90,43 +91,7 @@ function woocommerce_add_custom_field_general_section_single_product(){
             'desc_tip'    => 'true'
         )
     );
-}
-add_action('woocommerce_product_options_general_product_data', 'woocommerce_add_custom_field_general_section_single_product');
-
-/*Save*/
-function woocommerce_add_custom_field_general_section_single_product_save_field($post_id){
-
-    $product = wc_get_product( $post_id );
-     $title = isset( $_POST['costom_add_general_input_field'] ) ? $_POST['costom_add_general_input_field'] : '';
-     $product->update_meta_data( 'costom_add_general_input_field', sanitize_text_field( $title ) );
-     $product->save();
-}
-add_action('woocommerce_process_product_meta', 'woocommerce_add_custom_field_general_section_single_product_save_field');
-
-/*Display*/
-
-function woocommerce_add_custom_input_text_field_general_section_display_field(){
-    $Product_id=get_the_ID();
-   
-    $text_feld=get_post_meta($Product_id,'costom_add_general_input_field',true);
-    if ($text_feld){
-        echo "<b>General Input:</b> ";
-        echo $text_feld;
-    }else
-    {
-        echo "Not set custom Field Value";
-    }
-}
-add_action('woocommerce_single_product_summary','woocommerce_add_custom_input_text_field_general_section_display_field');
-
-
-/************************************** Add custom Select Field in General Section   ***************************************/
-/*Input Select Field*/
-/*Add*/
-
-function woocommerce_add_custom_select_field_general_section_single_product() {
-
-    global $woocommerce, $post, $product;
+    echo "<br>";
     woocommerce_wp_select( array(
         'id'      => 'costom_add_general_select_field',
         'label'   => __( 'Additional Fields<br> (Select) : ', 'woocommerce'),
@@ -140,104 +105,22 @@ function woocommerce_add_custom_select_field_general_section_single_product() {
             'Sun' => 'Sunday'
         ),
     ) );
-}
-add_action( 'woocommerce_product_options_general_product_data', 'woocommerce_add_custom_select_field_general_section_single_product' );
 
-/*Save*/
-function woo_add_custom_general_fields_save( $post_id ){
-
-     $product = wc_get_product( $post_id );
-     $title = isset( $_POST['costom_add_general_select_field'] ) ? $_POST['costom_add_general_select_field'] : '';
-     $product->update_meta_data( 'costom_add_general_select_field', sanitize_text_field( $title ));
-     $product->save();
-}
-add_action( 'woocommerce_process_product_meta', 'woo_add_custom_general_fields_save' ); 
-
-/*Display*/
-
-function woocommerce_add_custom_select_field_general_section(){
-
-    global $product,$post,$woocommerce;
     echo "<br>";
-    $product_id=get_the_ID();
-    $select_field=get_post_meta($product_id,'costom_add_general_select_field',true);
-    echo "<b>General Select:</b> ";
-    print_r($select_field);
-}
-add_action('woocommerce_single_product_summary','woocommerce_add_custom_select_field_general_section');
-
-
-/************************************** Add custom Text Area Field in General Section**************************************/
-/*Add*/
-function woocommerce_add_custom_text_area_general_section_single_product(){
-
-    global $woocommerce, $product, $post;
-    echo "<br>";
-     woocommerce_wp_textarea_input(array(
+    woocommerce_wp_textarea_input(array(
              'id'=>'costom_add_general_text_area_field',
              'label'   => __( 'Additional Fields:<br>(Text Area) : ', 'woocommerce'),
              'placeholder' => 'Add Custom Text Contents',
              'class'=>'text_area_class',
          ),
      );
-}
-add_action('woocommerce_product_options_general_product_data','woocommerce_add_custom_text_area_general_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_text_area_general_section_single_product($post_id){
-
-     $product = wc_get_product( $post_id );
-     $title = isset( $_POST['costom_add_general_text_area_field'] ) ? $_POST['costom_add_general_text_area_field'] : '';
-     $product->update_meta_data( 'costom_add_general_text_area_field', sanitize_text_field( $title ));
-     $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_text_area_general_section_single_product');
-/*Display*/
-function woocommerce_display_custom_text_area_field_general_section(){
-
-    global $product,$post,$woocommerce;
-    echo "<br>";
-    $product_id=get_the_ID();
-    $text_area_field=get_post_meta($product_id,'costom_add_general_text_area_field',true);
-    echo "<b>General Textarea:</b> ";
-    print_r($text_area_field);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_text_area_field_general_section');
-
-/************************************** Add custom Check Box Field in General Section**************************************/
-/*Check Box Field*/
-/*ADD*/
-function woocommerce_add_custom_checkbox_general_section_single_product(){
+    echo "<br>"; 
     woocommerce_wp_checkbox(array(
         'id'=>'costom_add_general_checkbox_field',
         'label'=>__('Additional Fields:<br>(checkbox) :','woocommerce'),
         'class'=>'checkbox_class',
     ));
-}
-add_action('woocommerce_product_options_general_product_data','woocommerce_add_custom_checkbox_general_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_checkbox_general_section_single_product($post_id){
-
-    $super = isset( $_POST[ 'costom_add_general_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_general_checkbox_field' ] ? 'yes' : 'no';
-    update_post_meta( $post_id, 'costom_add_general_checkbox_field', $super );    
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_checkbox_general_section_single_product');
-/*Display*/
-function woocommerce_display_custom_checkbox_field_general_section(){
-    global $post,$product,$woocommerce;
     echo "<br>";
-    $product_id=get_the_ID();
-    $checkbox_field=get_post_meta($product_id,'costom_add_general_checkbox_field',true);
-    echo "<b>General Checkbox:</b> ";
-    print_r($checkbox_field);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_checkbox_field_general_section');
-
-/************************************** Add custom Redio Button Field in General Section**************************************/
-/*Radio Field*/
-/*ADD*/
-function woocommerce_add_custom_radio_button_general_section_single_product(){
     woocommerce_wp_radio(array(
         'id'=>'costom_add_general_radio_button_field',
         //'label'=>__('Additional Fields:<br>(Radio Botton) :','woocommerce'),
@@ -248,66 +131,13 @@ function woocommerce_add_custom_radio_button_general_section_single_product(){
                 '30 days'    => '30 days',
              ),
     ));
-}
-add_action('woocommerce_product_options_general_product_data','woocommerce_add_custom_radio_button_general_section_single_product');
-/*Save*/
-function woocommerce_save_custom_radio_button_general_section_single_product($post_id){
-
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_general_radio_button_field'] ) ? $_POST['costom_add_general_radio_button_field'] : '';
-    $product->update_meta_data( 'costom_add_general_radio_button_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_radio_button_general_section_single_product');
-
-/*Display*/
-function woocommerce_display_custom_radio_btn_field_general_section(){
-    global $post,$woocommerce,$product;
     echo "<br>";
-    $product_id=get_the_ID();
-    $radio_btn_value=get_post_meta($product_id,'costom_add_general_radio_button_field',true);
-    echo "<b>General Redio:</b> ";
-    print_r($radio_btn_value);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_radio_btn_field_general_section');
-
-
-/*************************************** Add custom Text Input Field in Inventory Section ***************************************/
-/*Input Text Field*/
-/*Add*/
-function woocommerce_product_options_inventory_section_add_input_field(){
-    woocommerce_wp_text_input(array(
+     woocommerce_wp_text_input(array(
         'id'=>'costom_add_inventory_input_text_field',
         'label'=>__('Additional Fields:<br>(Input Field):','woocommerce'),
         'class'=>'inventory_input_field',
     ));
-}
-add_action('woocommerce_product_options_inventory_product_data','woocommerce_product_options_inventory_section_add_input_field');
-
-/*Save*/
-function woocommerce_add_custom_input_text_inventory_section_single_product_save($post_id){
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_inventory_input_text_field'] ) ? $_POST['costom_add_inventory_input_text_field'] : '';
-    $product->update_meta_data( 'costom_add_inventory_input_text_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_add_custom_input_text_inventory_section_single_product_save');
-
-/*Display*/
-function woocommerce_display_custom_input_text_field_inventoy_section(){
-    global $woocommerce, $product, $post;
     echo "<br>";
-    $product_id=get_the_ID();
-    $display_inventory_val=get_post_meta($product_id,'costom_add_inventory_input_text_field',true);
-    echo "<b>Inventory Input Field :</b> ";
-    print_r($display_inventory_val);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_input_text_field_inventoy_section');
-
-/*Input Select Field*/
-function woocommerce_add_custom_select_field_inventory_section_single_product() {
-
-    global $woocommerce, $post, $product;
     woocommerce_wp_select( array(
         'id'      => 'costom_add_inventory_select_field',
         'label'   => __( 'Additional Fields<br> (Select) : ', 'woocommerce'),
@@ -326,100 +156,22 @@ function woocommerce_add_custom_select_field_inventory_section_single_product() 
             'December' => 'December',
         ),
     ) );
-}
-add_action( 'woocommerce_product_options_inventory_product_data', 'woocommerce_add_custom_select_field_inventory_section_single_product');
 
-/*Save*/
-function woocommerce_save_custom_input_text_inventory_section_single_product_save($post_id){
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_inventory_select_field'] ) ? $_POST['costom_add_inventory_select_field'] : '';
-    $product->update_meta_data( 'costom_add_inventory_select_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_input_text_inventory_section_single_product_save');
-/*Display*/
-function woocommerce_display_custom_select_field_inventoy_section(){
-    global $woocommerce, $product, $post;
     echo "<br>";
-    $product_id=get_the_ID();
-    $display_inventory_val=get_post_meta($product_id,'costom_add_inventory_select_field',true);
-    echo "<b>Month:</b> ";
-    print_r($display_inventory_val);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_select_field_inventoy_section');
-
-/*Input Text Area Field*/
-
-/*Add*/
-function woocommerce_add_custom_text_area_inventory_section_single_product(){
-
-    global $woocommerce, $product, $post;
-    echo "<br>";
-     woocommerce_wp_textarea_input(array(
+    woocommerce_wp_textarea_input(array(
              'id'=>'costom_add_inventory_text_area_field',
              'label'   => __( 'Additional Fields:<br>(Text Area) : ', 'woocommerce'),
              'placeholder' => 'Add Custom Text Contents',
              'class'=>'text_area_class',
          ),
      );
-}
-add_action('woocommerce_product_options_inventory_product_data','woocommerce_add_custom_text_area_inventory_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_text_area_inventory_section_single_product($post_id){
-
-     $product = wc_get_product( $post_id );
-     $title = isset( $_POST['costom_add_inventory_text_area_field'] ) ? $_POST['costom_add_inventory_text_area_field'] : '';
-     $product->update_meta_data( 'costom_add_inventory_text_area_field', sanitize_text_field( $title ));
-     $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_text_area_inventory_section_single_product');
-/*Display*/
-function woocommerce_display_custom_text_area_field_inventory_section(){
-
-    global $product,$post,$woocommerce;
     echo "<br>";
-    $product_id=get_the_ID();
-    $text_area_field=get_post_meta($product_id,'costom_add_inventory_text_area_field',true);
-    echo "<b>Inventory Text Area:</b> ";
-    print_r($text_area_field);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_text_area_field_inventory_section');
-
-/*Check Box Field*/
-
-/*ADD*/
-function woocommerce_add_custom_checkbox_inventory_section_single_product(){
     woocommerce_wp_checkbox(array(
         'id'=>'costom_add_inventoy_checkbox_field',
         'label'=>__('Additional Fields:<br>(checkbox) :','woocommerce'),
         'class'=>'checkbox_class',
     ));
-}
-add_action('woocommerce_product_options_inventory_product_data','woocommerce_add_custom_checkbox_inventory_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_checkbox_inventoy_section_single_product($post_id){
-
-    $super = isset( $_POST[ 'costom_add_inventoy_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_inventoy_checkbox_field' ] ? 'yes' : 'no';
-    update_post_meta( $post_id, 'costom_add_inventoy_checkbox_field', $super );    
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_checkbox_inventoy_section_single_product');
-/*Display*/
-function woocommerce_display_custom_checkbox_field_inventory_section(){
-    global $post,$product,$woocommerce;
     echo "<br>";
-    $product_id=get_the_ID();
-    $checkbox_field=get_post_meta($product_id,'costom_add_inventoy_checkbox_field',true);
-    echo "<b>Inventory Checkbox :</b>";
-    print_r($checkbox_field);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_checkbox_field_inventory_section');
-
-/*Radio Button Field*/
-
-/*ADD*/
-function woocommerce_add_custom_radio_button_inventory_section_single_product(){
     woocommerce_wp_radio(array(
         'id'=>'costom_add_inventory_radio_button_field',
         //'label'=>__('Additional Fields:<br>(Radio Botton) :','woocommerce'),
@@ -430,38 +182,7 @@ function woocommerce_add_custom_radio_button_inventory_section_single_product(){
                 'other' => 'Other',
              ),
     ));
-}
-add_action('woocommerce_product_options_inventory_product_data','woocommerce_add_custom_radio_button_inventory_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_radio_button_inventory_section_single_product($post_id){
-
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_inventory_radio_button_field'] ) ? $_POST['costom_add_inventory_radio_button_field'] : '';
-    $product->update_meta_data( 'costom_add_inventory_radio_button_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_radio_button_inventory_section_single_product');
-
-/*Display*/
-function woocommerce_display_custom_radio_btn_field_inventory_section(){
-    global $post,$woocommerce,$product;
     echo "<br>";
-    $product_id=get_the_ID();
-    $radio_btn_value=get_post_meta($product_id,'costom_add_inventory_radio_button_field',true);
-    echo "<b>Inventory Redio : </b>";
-    print_r($radio_btn_value);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_radio_btn_field_inventory_section');
-
-
-/*************************************** Add custom Text Input Field in Linked Products ***************************************/
-/*Input Text Field*/
-/*Add*/
-function woocommerce_add_custom_field_link_product_section_single_product(){
-    global $woocommerce, $post;
-    
-    //Custom Product Text Field
     woocommerce_wp_text_input(
         array(
             'id'          => 'costom_add_link_product_input_field',
@@ -470,34 +191,7 @@ function woocommerce_add_custom_field_link_product_section_single_product(){
             'desc_tip'    => 'true'
         )
     );
-}
-add_action('woocommerce_product_options_related', 'woocommerce_add_custom_field_link_product_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_input_text_product_link_section_single_product($post_id){
-
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_link_product_input_field'] ) ? $_POST['costom_add_link_product_input_field'] : '';
-    $product->update_meta_data( 'costom_add_link_product_input_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_input_text_product_link_section_single_product');
-
-/*Display*/
-function woocommerce_display_custom_input_field_link_product_section(){
-    global $post,$woocommerce,$product;
     echo "<br>";
-    $product_id=get_the_ID();
-    $radio_btn_value=get_post_meta($product_id,'costom_add_link_product_input_field',true);
-    echo "<b>Link Product Input  : </b>";
-    print_r($radio_btn_value);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_input_field_link_product_section');
-
-/*Select Field*/
-function woocommerce_add_custom_select_field_linked_product_section_single_product() {
-
-    global $woocommerce, $post, $product;
     woocommerce_wp_select( array(
         'id'      => 'costom_add_linked_product_select_field',
         'label'   => __( 'Additional Fields<br> (Select) : ', 'woocommerce'),
@@ -516,100 +210,32 @@ function woocommerce_add_custom_select_field_linked_product_section_single_produ
             'December' => 'December',
         ),
     ) );
-}
-add_action( 'woocommerce_product_options_related', 'woocommerce_add_custom_select_field_linked_product_section_single_product');
 
-/*Save*/
-function woocommerce_save_custom_input_text_linked_product_section_single_product_save($post_id){
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_linked_product_select_field'] ) ? $_POST['costom_add_linked_product_select_field'] : '';
-    $product->update_meta_data( 'costom_add_linked_product_select_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_input_text_linked_product_section_single_product_save');
-/*Display*/
-function woocommerce_display_custom_select_field_linked_product_section(){
-    global $woocommerce, $product, $post;
     echo "<br>";
-    $product_id=get_the_ID();
-    $display_inventory_val=get_post_meta($product_id,'costom_add_linked_product_select_field',true);
-    echo "<b>Linked Product Select:</b> ";
-    print_r($display_inventory_val);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_select_field_linked_product_section');
-
-
-/*Input Text Area Field*/
-
-/*Add*/
-function woocommerce_add_custom_text_area_linked_product_section_single_product(){
-
-    global $woocommerce, $product, $post;
-    echo "<br>";
-     woocommerce_wp_textarea_input(array(
+    woocommerce_wp_textarea_input(array(
              'id'=>'costom_add_linked_text_area_field',
              'label'   => __( 'Additional Fields:<br>(Text Area) : ', 'woocommerce'),
              'placeholder' => 'Add Custom Text Contents',
              'class'=>'text_area_class',
          ),
      );
-}
-add_action('woocommerce_product_options_related','woocommerce_add_custom_text_area_linked_product_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_text_area_linked_product_section_single_product($post_id){
-
-     $product = wc_get_product( $post_id );
-     $title = isset( $_POST['costom_add_linked_text_area_field'] ) ? $_POST['costom_add_linked_text_area_field'] : '';
-     $product->update_meta_data( 'costom_add_linked_text_area_field', sanitize_text_field( $title ));
-     $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_text_area_linked_product_section_single_product');
-/*Display*/
-function woocommerce_display_custom_text_area_field_linked_product_section(){
-
-    global $product,$post,$woocommerce;
     echo "<br>";
-    $product_id=get_the_ID();
-    $text_area_field=get_post_meta($product_id,'costom_add_linked_text_area_field',true);
-    echo "<b>Linked Product Text Area:</b> ";
-    print_r($text_area_field);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_text_area_field_linked_product_section');
-
-/*Check Box Field*/
-
-/*ADD*/
-function woocommerce_add_custom_checkbox_linked_product_section_single_product(){
     woocommerce_wp_checkbox(array(
         'id'=>'costom_add_linked_product_checkbox_field',
         'label'=>__('Additional Fields:<br>(checkbox) :','woocommerce'),
         'class'=>'checkbox_class',
     ));
-}
-add_action('woocommerce_product_options_related','woocommerce_add_custom_checkbox_linked_product_section_single_product');
-/*Save*/
-function woocommerce_save_custom_checkbox_linked_product_section_single_product($post_id){
-
-    $super = isset( $_POST[ 'costom_add_linked_product_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_linked_product_checkbox_field' ] ? 'yes' : 'no';
-    update_post_meta( $post_id, 'costom_add_linked_product_checkbox_field', $super );    
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_checkbox_linked_product_section_single_product');
-/*Display*/
-function woocommerce_display_custom_checkbox_field_linked_product_section(){
-    global $post,$product,$woocommerce;
     echo "<br>";
-    $product_id=get_the_ID();
-    $checkbox_field=get_post_meta($product_id,'costom_add_linked_product_checkbox_field',true);
-    echo "<b>Linked Product Checkbox :</b>";
-    print_r($checkbox_field);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_checkbox_field_linked_product_section');
-
-/*Radio Button Field*/
-
-/*ADD*/
-function woocommerce_add_custom_radio_button_linked_product_section_single_product(){
+    woocommerce_wp_select( array(
+        'id'      => 'costom_add_attribute_select_field',
+        'label'   => __( 'Additional Fields<br> (Select) &nbsp; : ', 'woocommerce'),
+        'options' => array(
+            'Summer' => 'Summer ',
+            'Moonsoon' => 'Moonsoon',
+            'Winter' => 'Winter',
+        ),
+    ) );
+    echo "<br>";
     woocommerce_wp_radio(array(
         'id'=>'costom_add_linked_radio_button_field',
         //'label'=>__('Additional Fields:<br>(Radio Botton) :','woocommerce'),
@@ -621,39 +247,8 @@ function woocommerce_add_custom_radio_button_linked_product_section_single_produ
                 'Dhl'=>'Dhl'
              ),
     ));
-}
-add_action('woocommerce_product_options_related','woocommerce_add_custom_radio_button_linked_product_section_single_product');
 
-/*Save*/
-function woocommerce_save_custom_radio_button_linked_product_section_single_product($post_id){
-
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_linked_radio_button_field'] ) ? $_POST['costom_add_linked_radio_button_field'] : '';
-    $product->update_meta_data( 'costom_add_linked_radio_button_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_radio_button_linked_product_section_single_product');
-
-/*Display*/
-function woocommerce_display_custom_radio_btn_field_linked_section(){
-    global $post,$woocommerce,$product;
     echo "<br>";
-    $product_id=get_the_ID();
-    $radio_btn_value=get_post_meta($product_id,'costom_add_linked_radio_button_field',true);
-    echo "<b>Linked Product Redio : </b>";
-    print_r($radio_btn_value);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_radio_btn_field_linked_section');
-
-
-
-/*************************************** Add custom Text Input Field in Attributes Section ***************************************/
-/*Input Text Field*/
-/*Add*/
-function woocommerce_add_custom_field_attributes_section_single_product(){
-    global $woocommerce, $post;
-    
-    //Custom Product Text Field
     woocommerce_wp_text_input(
         array(
             'id'          => 'costom_add_attributes_input_field',
@@ -662,136 +257,21 @@ function woocommerce_add_custom_field_attributes_section_single_product(){
             'desc_tip'    => 'true'
         )
     );
-}
-add_action('woocommerce_product_options_attributes', 'woocommerce_add_custom_field_attributes_section_single_product');
-/*Save*/
-function woocommerce_save_custom_input_text_attributes_section_single_product($post_id){
-
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_attributes_input_field'] ) ? $_POST['costom_add_attributes_input_field'] : '';
-    $product->update_meta_data( 'costom_add_attributes_input_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_input_text_attributes_section_single_product');
-/*Display*/
-function woocommerce_display_custom_input_text_field_attributes_section(){
-    global $post,$woocommerce,$product;
     echo "<br>";
-    $product_id=get_the_ID();
-    $radio_btn_value=get_post_meta($product_id,'costom_add_attributes_input_field',true);
-    echo "<b>Attributes Input : </b>";
-    print_r($radio_btn_value);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_input_text_field_attributes_section');
-
-/*Select Field*/
-function woocommerce_add_custom_select_field_attribute_section_single_product() {
-
-    global $woocommerce, $post, $product;
-    woocommerce_wp_select( array(
-        'id'      => 'costom_add_attribute_select_field',
-        'label'   => __( 'Additional Fields<br> (Select) &nbsp; : ', 'woocommerce'),
-        'options' => array(
-            'Summer' => 'Summer ',
-            'Moonsoon' => 'Moonsoon',
-            'Winter' => 'Winter',
-        ),
-    ) );
-}
-add_action( 'woocommerce_product_options_attributes', 'woocommerce_add_custom_select_field_attribute_section_single_product');
-/*Save*/
-function woocommerce_save_custom_attributes_select_section_single($post_id){
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_attribute_select_field'] ) ? $_POST['costom_add_attribute_select_field'] : '';
-    $product->update_meta_data( 'costom_add_attribute_select_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_attributes_select_section_single');
-/*Display*/
-function woocommerce_display_custom_select_field_attribute_section(){
-    global $woocommerce, $product, $post;
-    echo "<br>";
-    $product_id=get_the_ID();
-    $display_inventory_val=get_post_meta($product_id,'costom_add_attribute_select_field',true);
-    echo "<b>Attributes Select:</b> ";
-    print_r($display_inventory_val);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_select_field_attribute_section');
-
-/*Input Text Area Field*/
-
-/*Add*/
-function woocommerce_add_custom_text_area_attribute_section_single_product(){
-
-    global $woocommerce, $product, $post;
-    echo "<br>";
-     woocommerce_wp_textarea_input(array(
+    woocommerce_wp_textarea_input(array(
              'id'=>'costom_add_attributes_text_area_field',
              'label'   => __( 'Additional Fields:<br>(Text Area) : ', 'woocommerce'),
              'placeholder' => 'Add Custom Text Contents',
              'class'=>'text_area_class',
          ),
-     );
-}
-add_action('woocommerce_product_options_attributes','woocommerce_add_custom_text_area_attribute_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_text_area_attaribute_section_single_product($post_id){
-
-     $product = wc_get_product( $post_id );
-     $title = isset( $_POST['costom_add_attributes_text_area_field'] ) ? $_POST['costom_add_attributes_text_area_field'] : '';
-     $product->update_meta_data( 'costom_add_attributes_text_area_field', sanitize_text_field( $title ));
-     $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_text_area_attaribute_section_single_product');
-/*Display*/
-function woocommerce_display_custom_text_area_field_attributes_section(){
-
-    global $product,$post,$woocommerce;
+     );   
     echo "<br>";
-    $product_id=get_the_ID();
-    $text_area_field=get_post_meta($product_id,'costom_add_attributes_text_area_field',true);
-    if ($text_area_field) {
-      echo "<b>Attributes Text Area:</b> ";
-      print_r($text_area_field); 
-    }
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_text_area_field_attributes_section');
-
-/*Check Box Field*/
-
-/*ADD*/
-function woocommerce_add_custom_checkbox_attributes_section_single_product(){
     woocommerce_wp_checkbox(array(
         'id'=>'costom_add_attributes_checkbox_field',
         'label'=>__('Additional Fields:<br>(checkbox) :','woocommerce'),
         'class'=>'checkbox_class',
-    ));
-}
-add_action('woocommerce_product_options_attributes','woocommerce_add_custom_checkbox_attributes_section_single_product');
-/*Save*/
-function woocommerce_save_custom_checkbox_attributes_section_single_product($post_id){
-    $super = isset( $_POST[ 'costom_add_attributes_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_attributes_checkbox_field' ] ? 'yes' : 'no';
-    update_post_meta( $post_id, 'costom_add_attributes_checkbox_field', $super );    
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_checkbox_attributes_section_single_product');
-/*Display*/
-function woocommerce_display_custom_checkbox_field_attributes_section(){
-    global $post,$product,$woocommerce;
+    ));  
     echo "<br>";
-    $product_id=get_the_ID();
-    $checkbox_field=get_post_meta($product_id,'costom_add_attributes_checkbox_field',true);
-    if ($checkbox_field) {
-        echo "<b>Attributes Checkbox :</b>";
-        print_r($checkbox_field);
-    }
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_checkbox_field_attributes_section');
-
-/*Radio Button Field*/
-
-/*ADD*/
-function woocommerce_add_custom_radio_button_attributes_section_single_product(){
     woocommerce_wp_radio(array(
         'id'=>'costom_add_attributes_radio_button_field',
         'label'=>__('Additional Fields:<br>(Radio Botton) :','woocommerce'),
@@ -803,41 +283,7 @@ function woocommerce_add_custom_radio_button_attributes_section_single_product()
                 'Dhl'=>'Dhl'
              ),
     ));
-}
-add_action('woocommerce_product_options_attributes','woocommerce_add_custom_radio_button_attributes_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_radio_button_attributes_section_single_product($post_id){
-
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_attributes_radio_button_field'] ) ? $_POST['costom_add_attributes_radio_button_field'] : '';
-    $product->update_meta_data( 'costom_add_attributes_radio_button_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_radio_button_attributes_section_single_product');
-
-/*Display*/
-function woocommerce_display_custom_radio_btn_field_attributes_section(){
-    global $post,$woocommerce,$product;
     echo "<br>";
-    $product_id=get_the_ID();
-    $radio_btn_value=get_post_meta($product_id,'costom_add_attributes_radio_button_field',true);
-    if($radio_btn_value){
-       echo "<b>Attributes Redio : </b>";
-       print_r($radio_btn_value);
-    }
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_radio_btn_field_attributes_section');
-
-
-/*************************************** Add custom Text Input Field in Advanced Section ***************************************/
-
-/*Input Text Field*/
-/*Add*/
-function woocommerce_add_custom_input_field_advanced_section_single_product(){
-    global $woocommerce, $post;
-    
-    //Custom Product Text Field
     woocommerce_wp_text_input(
         array(
             'id'          => 'costom_add_advanced_input_field',
@@ -846,34 +292,7 @@ function woocommerce_add_custom_input_field_advanced_section_single_product(){
             'desc_tip'    => 'true'
         )
     );
-}
-add_action('woocommerce_product_options_advanced', 'woocommerce_add_custom_input_field_advanced_section_single_product');
-
-/*Save*/
-function woocommerce_save_custom_advanced_select_section_single($post_id){
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_advanced_input_field'] ) ? $_POST['costom_add_advanced_input_field'] : '';
-    $product->update_meta_data( 'costom_add_advanced_input_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_advanced_select_section_single');
-
-/*Display*/
-function woocommerce_display_custom_select_field_advanced_section(){
-    global $woocommerce, $product, $post;
     echo "<br>";
-    $product_id=get_the_ID();
-    $display_advanced_val=get_post_meta($product_id,'costom_add_advanced_input_field',true);
-    echo "<b>Addvanced Input:</b> ";
-    print_r($display_advanced_val);
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_select_field_advanced_section');
-
-// /*Select Field*/
-/*Add*/
-function woocommerce_add_custom_select_field_advanced_section_single_product() {
-
-    global $woocommerce, $post, $product;
     woocommerce_wp_select( array(
         'id'      => 'costom_add_advanced_select_field',
         'label'   => __( 'Additional Fields<br> (Select) &nbsp; : ', 'woocommerce'),
@@ -884,103 +303,14 @@ function woocommerce_add_custom_select_field_advanced_section_single_product() {
             'Dell' => 'Dell',
         ),
     ) );
-}
-add_action( 'woocommerce_product_options_advanced', 'woocommerce_add_custom_select_field_advanced_section_single_product');
-/*Save*/
-function woocommerce_save_custom_advanced_select_section($post_id){
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_advanced_select_field'] ) ? $_POST['costom_add_advanced_select_field'] : '';
-    $product->update_meta_data( 'costom_add_advanced_select_field', sanitize_text_field( $title ));
-    $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_advanced_select_section');
-/*Display*/
-function woocommerce_display_custom_select_field_in_advanced_section(){
-    global $woocommerce, $product, $post;
     echo "<br>";
-    $product_id=get_the_ID();
-    $display_inventory_val=get_post_meta($product_id,'costom_add_advanced_select_field',true);
-    if($display_inventory_val) {
-        echo "<b>Advanced Select:</b> ";
-        print_r($display_inventory_val);
-    }
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_select_field_in_advanced_section');
-
-/*Input Text Area Field*/
-
-// /*Add*/
-function woocommerce_add_custom_text_area_advanced_section_single_product(){
-
-    global $woocommerce, $product, $post;
-    echo "<br>";
-     woocommerce_wp_textarea_input(array(
-             'id'=>'costom_add_addvanced_text_area_field',
-             'label'   => __( 'Additional Fields:<br>(Text Area) : ', 'woocommerce'),
-             'placeholder' => 'Add Custom Text Contents',
-             'class'=>'text_area_class',
-         ),
-     );
-}
-add_action('woocommerce_product_options_advanced','woocommerce_add_custom_text_area_advanced_section_single_product');
-
-// /*Save*/
-function woocommerce_save_custom_text_area_advanced_section_single_product($post_id){
-
-     $product = wc_get_product( $post_id );
-     $title = isset( $_POST['costom_add_addvanced_text_area_field'] ) ? $_POST['costom_add_addvanced_text_area_field'] : '';
-     $product->update_meta_data( 'costom_add_addvanced_text_area_field', sanitize_text_field( $title ));
-     $product->save();
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_text_area_advanced_section_single_product');
-/*Display*/
-function woocommerce_display_custom_text_area_field_advanced_section(){
-
-    global $product,$post,$woocommerce;
-    echo "<br>";
-    $product_id=get_the_ID();
-    $text_area_field=get_post_meta($product_id,'costom_add_addvanced_text_area_field',true);
-    if ($text_area_field) {
-      echo "<b>Advanced Text Area:</b> ";
-      print_r($text_area_field); 
-    }
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_text_area_field_advanced_section');
-
-// /*Check Box Field*/
-
-/*ADD*/
-function woocommerce_add_custom_checkbox_advanced_section_single_product(){
     woocommerce_wp_checkbox(array(
         'id'=>'costom_add_advanced_checkbox_field',
         'label'=>__('Additional Fields:<br>(checkbox) :','woocommerce'),
         'class'=>'checkbox_class',
     ));
-}
-add_action('woocommerce_product_options_advanced','woocommerce_add_custom_checkbox_advanced_section_single_product');
-/*Save*/
-function woocommerce_save_custom_checkbox_advanced_section_single_product($post_id){
-    $super = isset( $_POST[ 'costom_add_advanced_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_advanced_checkbox_field' ] ? 'yes' : 'no';
-    update_post_meta( $post_id, 'costom_add_advanced_checkbox_field', $super );    
-}
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_checkbox_advanced_section_single_product');
-/*Display*/
-function woocommerce_display_custom_checkbox_field_advanced_section(){
-    global $post,$product,$woocommerce;
+
     echo "<br>";
-    $product_id=get_the_ID();
-    $checkbox_field=get_post_meta($product_id,'costom_add_advanced_checkbox_field',true);
-    if ($checkbox_field){
-        echo "<b>Attributes Checkbox :</b>";
-        print_r($checkbox_field);
-    }
-}
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_checkbox_field_advanced_section');
-
-/*Radio Button Field*/
-
-/*ADD*/
-function woocommerce_add_custom_radio_button_advanced_section_single_product(){
     woocommerce_wp_radio(array(
         'id'=>'costom_add_advanced_radio_button_field',
        // 'label'=>__('Additional Fields:<br>(Radio Botton) :','woocommerce'),
@@ -992,31 +322,323 @@ function woocommerce_add_custom_radio_button_advanced_section_single_product(){
                 'Leh'=>'Leh'
              ),
     ));
+    echo "<br>";
+    woocommerce_wp_textarea_input(array(
+             'id'=>'costom_add_addvanced_text_area_field',
+             'label'   => __( 'Additional Fields:<br>(Text Area) : ', 'woocommerce'),
+             'placeholder' => 'Add Custom Text Contents',
+             'class'=>'text_area_class',
+         ),
+     );
 }
-add_action('woocommerce_product_options_advanced','woocommerce_add_custom_radio_button_advanced_section_single_product');
+add_action('woocommerce_product_options_general_product_data', 'woocommerce_add_custom_field_general_section_single_product');
 
 /*Save*/
-function woocommerce_save_custom_radio_button_advanced_section_single_product($post_id){
+function woocommerce_add_custom_field_general_section_single_product_save_field($post_id){
 
-    $product = wc_get_product( $post_id );
-    $title = isset( $_POST['costom_add_advanced_radio_button_field'] ) ? $_POST['costom_add_advanced_radio_button_field'] : '';
-    $product->update_meta_data( 'costom_add_advanced_radio_button_field', sanitize_text_field( $title ));
-    $product->save();
+     $product = wc_get_product( $post_id );
+     $title = isset( $_POST['costom_add_general_input_field'] ) ? $_POST['costom_add_general_input_field'] : '';
+     $product->update_meta_data( 'costom_add_general_input_field', sanitize_text_field( $title ) );
+     $product->save();
+
+     $product1 = wc_get_product( $post_id );
+     $title1 = isset( $_POST['costom_add_general_select_field'] ) ? $_POST['costom_add_general_select_field'] : '';
+     $product1->update_meta_data( 'costom_add_general_select_field', sanitize_text_field( $title1 ));
+     $product1->save();
+
+     $product2 = wc_get_product( $post_id );
+     $title2 = isset( $_POST['costom_add_general_text_area_field'] ) ? $_POST['costom_add_general_text_area_field'] : '';
+     $product2->update_meta_data( 'costom_add_general_text_area_field', sanitize_text_field( $title2 ));
+     $product2->save();
+
+     $super = isset( $_POST[ 'costom_add_general_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_general_checkbox_field' ] ? 'yes' : 'no';
+     update_post_meta( $post_id, 'costom_add_general_checkbox_field', $super );  
+
+     $product3 = wc_get_product( $post_id );
+     $title3 = isset( $_POST['costom_add_general_radio_button_field'] ) ? $_POST['costom_add_general_radio_button_field'] : '';
+     $product3->update_meta_data( 'costom_add_general_radio_button_field', sanitize_text_field( $title3 ));
+     $product3->save();
+
+     $product4 = wc_get_product( $post_id );
+     $title4 = isset( $_POST['costom_add_inventory_input_text_field'] ) ? $_POST['costom_add_inventory_input_text_field'] : '';
+     $product4->update_meta_data( 'costom_add_inventory_input_text_field', sanitize_text_field( $title4 ));
+     $product4->save();
+
+     $product5 = wc_get_product( $post_id );
+     $title5 = isset( $_POST['costom_add_inventory_select_field'] ) ? $_POST['costom_add_inventory_select_field'] : '';
+     $product5->update_meta_data( 'costom_add_inventory_select_field', sanitize_text_field( $title5 ));
+     $product5->save();
+
+     $product6 = wc_get_product( $post_id );
+     $title6 = isset( $_POST['costom_add_inventory_text_area_field'] ) ? $_POST['costom_add_inventory_text_area_field'] : '';
+     $product6->update_meta_data( 'costom_add_inventory_text_area_field', sanitize_text_field( $title6 ));
+     $product6->save();
+
+     $super1 = isset( $_POST[ 'costom_add_inventoy_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_inventoy_checkbox_field' ] ? 'yes' : 'no';
+     update_post_meta( $post_id, 'costom_add_inventoy_checkbox_field', $super1 );   
+
+     $product7 = wc_get_product( $post_id );
+     $title7 = isset( $_POST['costom_add_link_product_input_field'] ) ? $_POST['costom_add_link_product_input_field'] : '';
+     $product7->update_meta_data( 'costom_add_link_product_input_field', sanitize_text_field( $title7 ));
+     $product7->save();
+
+     $product8 = wc_get_product( $post_id );
+     $title8 = isset( $_POST['costom_add_inventory_radio_button_field'] ) ? $_POST['costom_add_inventory_radio_button_field'] : '';
+     $product8->update_meta_data( 'costom_add_inventory_radio_button_field', sanitize_text_field( $title8 ));
+     $product8->save();
+
+     $product9 = wc_get_product( $post_id );
+     $title9 = isset( $_POST['costom_add_linked_product_select_field'] ) ? $_POST['costom_add_linked_product_select_field'] : '';
+     $product9->update_meta_data( 'costom_add_linked_product_select_field', sanitize_text_field( $title9 ));
+     $product9->save();
+
+     $product10 = wc_get_product( $post_id );
+     $title10 = isset( $_POST['costom_add_linked_text_area_field'] ) ? $_POST['costom_add_linked_text_area_field'] : '';
+     $product10->update_meta_data( 'costom_add_linked_text_area_field', sanitize_text_field( $title10 ));
+     $product10->save();
+
+     $super3 = isset( $_POST[ 'costom_add_linked_product_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_linked_product_checkbox_field' ] ? 'yes' : 'no';
+     update_post_meta( $post_id, 'costom_add_linked_product_checkbox_field', $super3 );   
+
+     $product11 = wc_get_product( $post_id );
+     $title11 = isset( $_POST['costom_add_attribute_select_field'] ) ? $_POST['costom_add_attribute_select_field'] : '';
+     $product11->update_meta_data( 'costom_add_attribute_select_field', sanitize_text_field( $title11 ));
+     $product11->save(); 
+
+     $title12 = isset( $_POST['costom_add_linked_radio_button_field'] ) ? $_POST['costom_add_linked_radio_button_field'] : '';
+     $product12->update_meta_data( 'costom_add_linked_radio_button_field', sanitize_text_field( $title12 ));
+     $product12->save();
+
+     $title13 = isset( $_POST['costom_add_attributes_input_field'] ) ? $_POST['costom_add_attributes_input_field'] : '';
+     $product13->update_meta_data( 'costom_add_attributes_input_field', sanitize_text_field( $title13 ));
+     $product13->save();
+
+     $title14 = isset( $_POST['costom_add_attributes_text_area_field'] ) ? $_POST['costom_add_attributes_text_area_field'] : '';
+     $product14->update_meta_data( 'costom_add_attributes_text_area_field', sanitize_text_field( $title14 ));
+     $product14->save();
+
+     $super5 = isset( $_POST[ 'costom_add_attributes_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_attributes_checkbox_field' ] ? 'yes' : 'no';
+     update_post_meta( $post_id, 'costom_add_attributes_checkbox_field', $super5 );
+
+     $title15 = isset( $_POST['costom_add_attributes_radio_button_field'] ) ? $_POST['costom_add_attributes_radio_button_field'] : '';
+     $product15->update_meta_data( 'costom_add_attributes_radio_button_field', sanitize_text_field( $title15 ));
+     $product15->save();
+
+     $title16 = isset( $_POST['costom_add_advanced_input_field'] ) ? $_POST['costom_add_advanced_input_field'] : '';
+     $product16->update_meta_data( 'costom_add_advanced_input_field', sanitize_text_field( $title16 ));
+     $product16->save();
+
+     $title17 = isset( $_POST['costom_add_advanced_select_field'] ) ? $_POST['costom_add_advanced_select_field'] : '';
+     $product17->update_meta_data( 'costom_add_advanced_select_field', sanitize_text_field( $title17 ));
+     $product17->save();
+
+     $title18 = isset( $_POST['costom_add_addvanced_text_area_field'] ) ? $_POST['costom_add_addvanced_text_area_field'] : '';
+     $product18->update_meta_data( 'costom_add_addvanced_text_area_field', sanitize_text_field( $title18 ));
+     $product18->save();
+
+     $super6 = isset( $_POST[ 'costom_add_advanced_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_advanced_checkbox_field' ] ? 'yes' : 'no';
+     update_post_meta( $post_id, 'costom_add_advanced_checkbox_field', $super6 );  
+
+     $title19 = isset( $_POST['costom_add_advanced_radio_button_field'] ) ? $_POST['costom_add_advanced_radio_button_field'] : '';
+     $product19->update_meta_data( 'costom_add_advanced_radio_button_field', sanitize_text_field( $title19 ));
+     $product19->save();   
+
+
 }
-add_action('woocommerce_process_product_meta','woocommerce_save_custom_radio_button_advanced_section_single_product');
+add_action('woocommerce_process_product_meta', 'woocommerce_add_custom_field_general_section_single_product_save_field');
 
 /*Display*/
-function woocommerce_display_custom_radio_btn_field_advanced_section(){
-    global $post,$woocommerce,$product;
-    echo "<br>";
-    $product_id=get_the_ID();
+
+function woocommerce_add_custom_input_text_field_general_section_display_field(){
+    $Product_id=get_the_ID();
+   
+    $text_feld=get_post_meta($Product_id,'costom_add_general_input_field',true);
+    if ($text_feld){
+        echo "<br>";
+        echo "<b>General Input:</b> ";
+        echo $text_feld;
+    }
+
+    $select_field=get_post_meta($product_id,'costom_add_general_select_field',true);
+
+    if($select_field) {
+      echo "<br>";  
+      echo "<b>General Select:</b> ";
+      print_r($select_field);  
+    }
+
+
+    $text_area_field=get_post_meta($product_id,'costom_add_general_text_area_field',true);
+    if ($text_area_field) {
+       echo "<br>"; 
+       echo "<b>General Textarea:</b> ";
+       print_r($text_area_field);
+    }
+
+
+    $checkbox_field=get_post_meta($product_id,'costom_add_general_checkbox_field',true);
+    if ($checkbox_field) {
+      echo "<br>";  
+      echo "<b>General Checkbox:</b> ";
+      print_r($checkbox_field);
+    }
+
+    $radio_btn_value=get_post_meta($product_id,'costom_add_general_radio_button_field',true);
+    if($radio_btn_value) {
+       echo "<br>"; 
+       echo "<b>General Redio:</b> ";
+       print_r($radio_btn_value);
+    }
+
+
+    $display_inventory_val=get_post_meta($product_id,'costom_add_inventory_input_text_field',true);
+    if($display_inventory_val) {
+       echo "<br>"; 
+       echo "<b>Inventory Input Field :</b> ";
+       print_r($display_inventory_val);
+    }
+
+    $display_inventory_val=get_post_meta($product_id,'costom_add_inventory_select_field',true);
+    if ($display_inventory_val) {
+    echo "<br>";    
+    echo "<b>Month:</b> ";
+    print_r($display_inventory_val);
+    }
+
+    $text_area_field=get_post_meta($product_id,'costom_add_inventory_text_area_field',true);
+    if ($text_area_field) {
+      echo "<br>";  
+      echo "<b>Inventory Text Area:</b> ";
+      print_r($text_area_field);
+    }
+
+    $checkbox_field=get_post_meta($product_id,'costom_add_inventoy_checkbox_field',true);
+    if ($checkbox_field) {
+       echo "<br>"; 
+       echo "<b>Inventory Checkbox :</b>";
+       print_r($checkbox_field);
+    }
+
+    $radio_btn_value=get_post_meta($product_id,'costom_add_inventory_radio_button_field',true);
+    if ($radio_btn_value) {
+       echo "<br>"; 
+       echo "<b>Inventory Redio : </b>";
+       print_r($radio_btn_value);
+    }
+
+    $radio_btn_value=get_post_meta($product_id,'costom_add_link_product_input_field',true);
+    if ($radio_btn_value) {
+     echo "<br>";
+     echo "<b>Link Product Input  : </b>";
+     print_r($radio_btn_value);
+    }
+
+    $display_inventory_val=get_post_meta($product_id,'costom_add_linked_product_select_field',true);
+    if($display_inventory_val){
+        echo "<br>";
+       echo "<b>Linked Product Select:</b> ";
+       print_r($display_inventory_val);
+    }
+
+
+    $text_area_field=get_post_meta($product_id,'costom_add_linked_text_area_field',true);
+    if ($text_area_field) {
+       echo "<br>"; 
+       echo "<b>Linked Product Text Area:</b> ";
+       print_r($text_area_field);    
+    }
+
+    $checkbox_field=get_post_meta($product_id,'costom_add_linked_product_checkbox_field',true);
+    if($checkbox_field){
+      echo "<br>";  
+      echo "<b>Linked Product Checkbox :</b>";
+      print_r($checkbox_field);
+    }
+
+    $display_advanced_val=get_post_meta($product_id,'costom_add_advanced_input_field',true);
+    if ($display_advanced_val) {
+      echo "<br>";  
+      echo "<b>Addvanced Input:</b> ";
+      print_r($display_advanced_val);
+    }
+
+    $display_inventory_val=get_post_meta($product_id,'costom_add_advanced_select_field',true);
+    if($display_inventory_val) {
+        echo "<br>";
+        echo "<b>Advanced Select:</b> ";
+        print_r($display_inventory_val);
+    }
+
+
+    $text_area_field=get_post_meta($product_id,'costom_add_addvanced_text_area_field',true);
+    if ($text_area_field) {
+      echo "<br>";
+      echo "<b>Advanced Text Area:</b> ";
+      print_r($text_area_field); 
+    }    
+   
+
+    $checkbox_field=get_post_meta($product_id,'costom_add_advanced_checkbox_field',true);
+    if ($checkbox_field){
+        echo "<br>";
+        echo "<b>Attributes Checkbox :</b>";
+        print_r($checkbox_field);
+    }
+
+
     $radio_btn_value=get_post_meta($product_id,'costom_add_advanced_radio_button_field',true);
     if($radio_btn_value){
+        echo "<br>";
        echo "<b>Attributes Redio : </b>";
        print_r($radio_btn_value);
     }
+
+    $radio_btn_value=get_post_meta($product_id,'costom_add_attributes_input_field',true);
+    if ($radio_btn_value) {
+        echo "<br>";
+      echo "<b>Attributes Input : </b>";
+      print_r($radio_btn_value);
+    }
+    
+
+    $display_inventory_val=get_post_meta($product_id,'costom_add_attribute_select_field',true);
+    if ($display_inventory_val) {
+        echo "<br>";
+        echo "<b>Attributes Select:</b> ";
+    print_r($display_inventory_val);
+    }
+  
+
+    $text_area_field=get_post_meta($product_id,'costom_add_attributes_text_area_field',true);
+    if ($text_area_field) {
+        echo "<br>";
+      echo "<b>Attributes Text Area:</b> ";
+      print_r($text_area_field); 
+    }
+
+    $checkbox_field=get_post_meta($product_id,'costom_add_attributes_checkbox_field',true);
+    if ($checkbox_field) {
+        echo "<br>";
+        echo "<b>Attributes Checkbox :</b>";
+        print_r($checkbox_field);
+    }
+
+    $radio_btn_value=get_post_meta($product_id,'costom_add_attributes_radio_button_field',true);
+    if($radio_btn_value){
+        echo "<br>";
+       echo "<b>Attributes Redio : </b>";
+       print_r($radio_btn_value);
+    }
+
+    $radio_btn_value=get_post_meta($product_id,'costom_add_linked_radio_button_field',true);
+    if ($radio_btn_value){
+        echo "<br>";
+       echo "<b>Linked Product Redio : </b>";
+       print_r($radio_btn_value);
+    }
 }
-add_action('woocommerce_single_product_summary','woocommerce_display_custom_radio_btn_field_advanced_section');
+add_action('woocommerce_single_product_summary','woocommerce_add_custom_input_text_field_general_section_display_field');
+
 
 
 /*************************************** Add New Custom Tab Section (Custom Panel) ***************************************/
@@ -1157,3 +779,115 @@ function woocommerce_display_custom_input_field_custom_tab_section(){
 }
 add_action('woocommerce_single_product_summary','woocommerce_display_custom_input_field_custom_tab_section');
 
+/*Add Load More In Shop Page*/
+
+// add_filter( 'loop_shop_per_page', 'my_remove_pagination', 20 );
+ 
+// function my_remove_pagination( $cols ) {
+ 
+// $cols = 90;
+ 
+// return $cols;
+ 
+// }
+
+function mb_remove_sidebar() {
+    return false;
+}
+
+add_filter( 'is_active_sidebar', 'mb_remove_sidebar', 10, 2 );
+
+// ******************************Load More Shop Page*****************************************************************
+/*This Shortcode is Added in loop/pagination.php*/
+add_shortcode('load_more_product','load_more_product_function');
+
+function load_more_product_function(){
+   //global $wp_query;
+
+  // $pod_page = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+  // $total   = isset( $total ) ? $total : wc_get_loop_prop( 'total_pages' );
+  // $current = isset( $current ) ? $current : wc_get_loop_prop( 'current_page' );
+  // $total_posts = $wp_query->found_posts;
+  // echo "<pre>";
+  // echo "Totals : "; 
+  // print_r($total_posts);
+
+   ?>
+
+    <div class="btn-group text-center">
+        <button class="btn btn-primary load_more">Load More</button>
+    </div>
+    <?php
+}
+add_action('wp_footer','js_add_for_loadmore_ooter');
+
+function js_add_for_loadmore_ooter(){
+    ?>
+   <script type="text/javascript"> 
+    jQuery(document).ready(function($) {
+        pod_page=4;    
+
+        //pod_page="<?php echo ( get_query_var('paged') ) ? get_query_var('paged') : 1; ?>";
+        var total_product_post_count="<?php echo ceil(wp_count_posts( 'product' )->publish/4);  ?>";
+        var ajx_url='<?php echo admin_url('admin-ajax.php'); ?>';
+
+        jQuery('.load_more').on('click',function(){
+          //alert(total_product_post_count);
+            jQuery.ajax({
+              url: ajx_url,
+              type: 'POST',
+              data: {
+                'action': 'load_more_action',
+                'pod_page':pod_page
+
+              },
+              success: function(load_more_res) {
+                jQuery('.products').append(load_more_res);
+                if(total_product_post_count == pod_page){
+                    jQuery('.load_more').hide();
+                   }
+                   pod_page++;
+              },
+            });
+        })
+    });    
+  </script>
+
+    <?php
+}
+
+
+add_action( 'wp_ajax_load_more_action','wp_ajax_load_more_action_function' );
+add_action( 'wp_ajax_nopriv_load_more_action','wp_ajax_load_more_action_function');
+
+function wp_ajax_load_more_action_function(){
+    $pod_page_aj=$_POST['pod_page'];
+    // echo "<pre>";
+    // print_r($pod_page_aj);
+    // echo "<pre>";
+    // die();
+   // $post_id=25;
+    $post_id[] = $post->ID;
+    $pod_load_arg = array(
+         'post_type'=>'product',
+         'posts_per_page' => 4,
+         'paged'=>$pod_page_aj ,
+         'orderby'   => 'title',
+         'order'  => 'ASC',
+         'post__not_in'=>$post_id,
+
+        // 'orderby' => 'post_date',
+        // 'order' => 'DESC',
+    );
+    $podcast_load_posts=new WP_Query($pod_load_arg);
+    echo '<div class="main-blog-box row">';     
+    if($podcast_load_posts->have_posts()){
+        while($podcast_load_posts->have_posts()){
+            $podcast_load_posts->the_post();
+            wc_get_template_part( 'content', 'product' );  
+        }
+        wp_reset_postdata();
+    }
+    echo '</div> ';
+    die();
+}
