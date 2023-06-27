@@ -1,0 +1,1170 @@
+2023-06-27T04:05:31+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:05:43+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:06:51+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:07:21+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:07:45+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:08:06+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:08:43+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:09:12+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:09:19+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:09:31+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T04:10:51+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:413
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 413
+
+2023-06-27T04:11:03+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:417
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 417
+
+2023-06-27T06:09:11+00:00 CRITICAL syntax error, unexpected variable "$pod_load_arg", expecting "," or ";" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 945
+
+2023-06-27T06:09:11+00:00 CRITICAL syntax error, unexpected variable "$pod_load_arg", expecting "," or ";" in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 945
+
+2023-06-27T08:30:48+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T08:30:51+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:409
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 409
+
+2023-06-27T08:31:00+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:413
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 413
+
+2023-06-27T08:31:08+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:413
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 413
+
+2023-06-27T08:31:14+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:413
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 413
+
+2023-06-27T08:31:20+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:413
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 413
+
+2023-06-27T08:31:29+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:413
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 413
+
+2023-06-27T08:31:36+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:413
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 413
+
+2023-06-27T08:31:42+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:413
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 413
+
+2023-06-27T08:31:51+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:428
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 428
+
+2023-06-27T08:32:05+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:428
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 428
+
+2023-06-27T08:32:09+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:428
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 428
+
+2023-06-27T08:32:14+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:428
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 428
+
+2023-06-27T08:36:07+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:428
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 428
+
+2023-06-27T08:36:55+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:428
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 428
+
+2023-06-27T08:37:48+00:00 CRITICAL Uncaught Error: Call to a member function update_meta_data() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:428
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woocommerce_add_custom_field_general_section_single_product_save_field()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php(268): do_action()
+#4 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): WC_Admin_Meta_Boxes->save_meta_boxes()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/wp1/wp-includes/post.php(4715): do_action()
+#8 /var/www/html/wp1/wp-includes/post.php(4817): wp_insert_post()
+#9 /var/www/html/wp1/wp-admin/includes/post.php(439): wp_update_post()
+#10 /var/www/html/wp1/wp-admin/post.php(227): edit_post()
+#11 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 428
+
+2023-06-27T09:03:09+00:00 CRITICAL Cannot redeclare my_custom_add_to_cart_redirect() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1078) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1086
+
+2023-06-27T09:03:10+00:00 CRITICAL Cannot redeclare my_custom_add_to_cart_redirect() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1078) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1086
+
+2023-06-27T09:03:13+00:00 CRITICAL Cannot redeclare my_custom_add_to_cart_redirect() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1078) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1086
+
+2023-06-27T09:15:53+00:00 CRITICAL Cannot redeclare wc_modify_update_cart_totals() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1132
+
+2023-06-27T09:15:54+00:00 CRITICAL Cannot redeclare wc_modify_update_cart_totals() (previously declared in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108) in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1132
+
+2023-06-27T09:57:18+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:18+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:19+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:20+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:35+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:36+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:36+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:57:38+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:58:16+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T09:58:18+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1108
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1108
+
+2023-06-27T10:12:34+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(109): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:12:36+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:12:39+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(109): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:12:41+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/templates/single-product.php(60): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:12:49+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:12:57+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:13:05+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:13:07+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:13:55+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(109): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:13:55+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(109): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:14:33+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(109): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:14:35+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:14:38+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:14:41+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:14:46+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront/page.php(41): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:14:52+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1064
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wc_modify_update_cart_totals()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-includes/general-template.php(3065): do_action()
+#4 /var/www/html/wp1/wp-content/themes/storefront/footer.php(37): wp_footer()
+#5 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#6 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#7 /var/www/html/wp1/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(109): get_footer()
+#9 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#10 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#11 /var/www/html/wp1/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1064
+
+2023-06-27T10:18:54+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1111
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(20): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1111
+
+2023-06-27T10:18:55+00:00 CRITICAL Uncaught Error: Call to undefined function get_cart_url() in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php:1111
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(310): woo_skip_cart_redirect_checkout()
+#1 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(578): apply_filters()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront-child/woocommerce/archive-product.php(20): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/themes/storefront-child/functions.php on line 1111
+
+2023-06-27T11:01:38+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:189
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 189
+

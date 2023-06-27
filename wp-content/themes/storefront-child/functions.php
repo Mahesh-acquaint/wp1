@@ -382,10 +382,10 @@ function woocommerce_add_custom_field_general_section_single_product_save_field(
      $product7->update_meta_data( 'costom_add_link_product_input_field', sanitize_text_field( $title7 ));
      $product7->save();
 
-     $product8 = wc_get_product( $post_id );
-     $title8 = isset( $_POST['costom_add_inventory_radio_button_field'] ) ? $_POST['costom_add_inventory_radio_button_field'] : '';
-     $product8->update_meta_data( 'costom_add_inventory_radio_button_field', sanitize_text_field( $title8 ));
-     $product8->save();
+     // $product8 = wc_get_product( $post_id );
+     // $title8 = isset( $_POST['costom_add_inventory_radio_button_field'] ) ? $_POST['costom_add_inventory_radio_button_field'] : '';
+     // $product8->update_meta_data( 'costom_add_inventory_radio_button_field', sanitize_text_field( $title8 ));
+     // $product8->save();
 
      $product9 = wc_get_product( $post_id );
      $title9 = isset( $_POST['costom_add_linked_product_select_field'] ) ? $_POST['costom_add_linked_product_select_field'] : '';
@@ -400,48 +400,48 @@ function woocommerce_add_custom_field_general_section_single_product_save_field(
      $super3 = isset( $_POST[ 'costom_add_linked_product_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_linked_product_checkbox_field' ] ? 'yes' : 'no';
      update_post_meta( $post_id, 'costom_add_linked_product_checkbox_field', $super3 );   
 
-     $product11 = wc_get_product( $post_id );
-     $title11 = isset( $_POST['costom_add_attribute_select_field'] ) ? $_POST['costom_add_attribute_select_field'] : '';
-     $product11->update_meta_data( 'costom_add_attribute_select_field', sanitize_text_field( $title11 ));
-     $product11->save(); 
+     // $product11 = wc_get_product( $post_id );
+     // $title11 = isset( $_POST['costom_add_attribute_select_field'] ) ? $_POST['costom_add_attribute_select_field'] : '';
+     // $product11->update_meta_data( 'costom_add_attribute_select_field', sanitize_text_field( $title11 ));
+     // $product11->save(); 
 
-     $title12 = isset( $_POST['costom_add_linked_radio_button_field'] ) ? $_POST['costom_add_linked_radio_button_field'] : '';
-     $product12->update_meta_data( 'costom_add_linked_radio_button_field', sanitize_text_field( $title12 ));
-     $product12->save();
+     // // $title12 = isset( $_POST['costom_add_linked_radio_button_field'] ) ? $_POST['costom_add_linked_radio_button_field'] : '';
+     // // $product12->update_meta_data( 'costom_add_linked_radio_button_field', sanitize_text_field( $title12 ));
+     // // $product12->save();
 
-     $title13 = isset( $_POST['costom_add_attributes_input_field'] ) ? $_POST['costom_add_attributes_input_field'] : '';
-     $product13->update_meta_data( 'costom_add_attributes_input_field', sanitize_text_field( $title13 ));
-     $product13->save();
+     // // $title13 = isset( $_POST['costom_add_attributes_input_field'] ) ? $_POST['costom_add_attributes_input_field'] : '';
+     // // $product13->update_meta_data( 'costom_add_attributes_input_field', sanitize_text_field( $title13 ));
+     // // $product13->save();
 
-     $title14 = isset( $_POST['costom_add_attributes_text_area_field'] ) ? $_POST['costom_add_attributes_text_area_field'] : '';
-     $product14->update_meta_data( 'costom_add_attributes_text_area_field', sanitize_text_field( $title14 ));
-     $product14->save();
+     // $title14 = isset( $_POST['costom_add_attributes_text_area_field'] ) ? $_POST['costom_add_attributes_text_area_field'] : '';
+     // $product14->update_meta_data( 'costom_add_attributes_text_area_field', sanitize_text_field( $title14 ));
+     // $product14->save();
 
-     $super5 = isset( $_POST[ 'costom_add_attributes_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_attributes_checkbox_field' ] ? 'yes' : 'no';
-     update_post_meta( $post_id, 'costom_add_attributes_checkbox_field', $super5 );
+     // $super5 = isset( $_POST[ 'costom_add_attributes_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_attributes_checkbox_field' ] ? 'yes' : 'no';
+     // update_post_meta( $post_id, 'costom_add_attributes_checkbox_field', $super5 );
 
-     $title15 = isset( $_POST['costom_add_attributes_radio_button_field'] ) ? $_POST['costom_add_attributes_radio_button_field'] : '';
-     $product15->update_meta_data( 'costom_add_attributes_radio_button_field', sanitize_text_field( $title15 ));
-     $product15->save();
+     // $title15 = isset( $_POST['costom_add_attributes_radio_button_field'] ) ? $_POST['costom_add_attributes_radio_button_field'] : '';
+     // $product15->update_meta_data( 'costom_add_attributes_radio_button_field', sanitize_text_field( $title15 ));
+     // $product15->save();
 
-     $title16 = isset( $_POST['costom_add_advanced_input_field'] ) ? $_POST['costom_add_advanced_input_field'] : '';
-     $product16->update_meta_data( 'costom_add_advanced_input_field', sanitize_text_field( $title16 ));
-     $product16->save();
+     // $title160 = isset( $_POST['costom_add_advanced_input_field'] ) ? $_POST['costom_add_advanced_input_field'] : '';
+     // $product160->update_meta_data( 'costom_add_advanced_input_field', sanitize_text_field( $title16 ));
+     // $product160->save();
 
-     $title17 = isset( $_POST['costom_add_advanced_select_field'] ) ? $_POST['costom_add_advanced_select_field'] : '';
-     $product17->update_meta_data( 'costom_add_advanced_select_field', sanitize_text_field( $title17 ));
-     $product17->save();
+     // $title17 = isset( $_POST['costom_add_advanced_select_field'] ) ? $_POST['costom_add_advanced_select_field'] : '';
+     // $product17->update_meta_data( 'costom_add_advanced_select_field', sanitize_text_field( $title170 ));
+     // $product17->save();
 
-     $title18 = isset( $_POST['costom_add_addvanced_text_area_field'] ) ? $_POST['costom_add_addvanced_text_area_field'] : '';
-     $product18->update_meta_data( 'costom_add_addvanced_text_area_field', sanitize_text_field( $title18 ));
-     $product18->save();
+     // $title18 = isset( $_POST['costom_add_addvanced_text_area_field'] ) ? $_POST['costom_add_addvanced_text_area_field'] : '';
+     // $product18->update_meta_data( 'costom_add_addvanced_text_area_field', sanitize_text_field( $title18 ));
+     // $product18->save();
 
-     $super6 = isset( $_POST[ 'costom_add_advanced_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_advanced_checkbox_field' ] ? 'yes' : 'no';
-     update_post_meta( $post_id, 'costom_add_advanced_checkbox_field', $super6 );  
+     // $super6 = isset( $_POST[ 'costom_add_advanced_checkbox_field' ] ) && 'yes' === $_POST[ 'costom_add_advanced_checkbox_field' ] ? 'yes' : 'no';
+     // update_post_meta( $post_id, 'costom_add_advanced_checkbox_field', $super6 );  
 
-     $title19 = isset( $_POST['costom_add_advanced_radio_button_field'] ) ? $_POST['costom_add_advanced_radio_button_field'] : '';
-     $product19->update_meta_data( 'costom_add_advanced_radio_button_field', sanitize_text_field( $title19 ));
-     $product19->save();   
+     // $title19 = isset( $_POST['costom_add_advanced_radio_button_field'] ) ? $_POST['costom_add_advanced_radio_button_field'] : '';
+     // $product19->update_meta_data( 'costom_add_advanced_radio_button_field', sanitize_text_field( $title19 ));
+     // $product19->save();   
 
 
 }
@@ -460,7 +460,6 @@ function woocommerce_add_custom_input_text_field_general_section_display_field()
     }
 
     $select_field=get_post_meta($product_id,'costom_add_general_select_field',true);
-
     if($select_field) {
       echo "<br>";  
       echo "<b>General Select:</b> ";
@@ -475,12 +474,11 @@ function woocommerce_add_custom_input_text_field_general_section_display_field()
        print_r($text_area_field);
     }
 
-
-    $checkbox_field=get_post_meta($product_id,'costom_add_general_checkbox_field',true);
-    if ($checkbox_field) {
+    $checkbox_field99=get_post_meta($product_id,'costom_add_general_checkbox_field',true);
+    if ($checkbox_field99) {
       echo "<br>";  
       echo "<b>General Checkbox:</b> ";
-      print_r($checkbox_field);
+      print_r($checkbox_field99);
     }
 
     $radio_btn_value=get_post_meta($product_id,'costom_add_general_radio_button_field',true);
@@ -512,25 +510,25 @@ function woocommerce_add_custom_input_text_field_general_section_display_field()
       print_r($text_area_field);
     }
 
-    $checkbox_field=get_post_meta($product_id,'costom_add_inventoy_checkbox_field',true);
-    if ($checkbox_field) {
+    $checkbox_field100=get_post_meta($product_id,'costom_add_inventoy_checkbox_field',true);
+    if ($checkbox_field100) {
        echo "<br>"; 
        echo "<b>Inventory Checkbox :</b>";
-       print_r($checkbox_field);
+       print_r($checkbox_field100);
     }
 
-    $radio_btn_value=get_post_meta($product_id,'costom_add_inventory_radio_button_field',true);
-    if ($radio_btn_value) {
-       echo "<br>"; 
-       echo "<b>Inventory Redio : </b>";
-       print_r($radio_btn_value);
-    }
+    // $radio_btn_value1=get_post_meta($product_id,'costom_add_inventory_radio_button_field',true);
+    // if ($radio_btn_value1) {
+    //    echo "<br>"; 
+    //    echo "<b>Inventory Redio : </b>";
+    //    print_r($radio_btn_value1);
+    // }
 
-    $radio_btn_value=get_post_meta($product_id,'costom_add_link_product_input_field',true);
-    if ($radio_btn_value) {
+    $radio_btn_value2=get_post_meta($product_id,'costom_add_link_product_input_field',true);
+    if ($radio_btn_value2) {
      echo "<br>";
      echo "<b>Link Product Input  : </b>";
-     print_r($radio_btn_value);
+     print_r($radio_btn_value2);
     }
 
     $display_inventory_val=get_post_meta($product_id,'costom_add_linked_product_select_field',true);
@@ -548,94 +546,94 @@ function woocommerce_add_custom_input_text_field_general_section_display_field()
        print_r($text_area_field);    
     }
 
-    $checkbox_field=get_post_meta($product_id,'costom_add_linked_product_checkbox_field',true);
-    if($checkbox_field){
+    $checkbox_field11=get_post_meta($product_id,'costom_add_linked_product_checkbox_field',true);
+    if($checkbox_field11){
       echo "<br>";  
       echo "<b>Linked Product Checkbox :</b>";
-      print_r($checkbox_field);
+      print_r($checkbox_field11);
     }
 
-    $display_advanced_val=get_post_meta($product_id,'costom_add_advanced_input_field',true);
-    if ($display_advanced_val) {
-      echo "<br>";  
-      echo "<b>Addvanced Input:</b> ";
-      print_r($display_advanced_val);
-    }
+    // $display_advanced_val=get_post_meta($product_id,'costom_add_advanced_input_field',true);
+    // if ($display_advanced_val) {
+    //   echo "<br>";  
+    //   echo "<b>Addvanced Input:</b> ";
+    //   print_r($display_advanced_val);
+    // }
 
-    $display_inventory_val=get_post_meta($product_id,'costom_add_advanced_select_field',true);
-    if($display_inventory_val) {
-        echo "<br>";
-        echo "<b>Advanced Select:</b> ";
-        print_r($display_inventory_val);
-    }
+    // $display_inventory_val=get_post_meta($product_id,'costom_add_advanced_select_field',true);
+    // if($display_inventory_val) {
+    //     echo "<br>";
+    //     echo "<b>Advanced Select:</b> ";
+    //     print_r($display_inventory_val);
+    // }
 
 
-    $text_area_field=get_post_meta($product_id,'costom_add_addvanced_text_area_field',true);
-    if ($text_area_field) {
-      echo "<br>";
-      echo "<b>Advanced Text Area:</b> ";
-      print_r($text_area_field); 
-    }    
+    // $text_area_field=get_post_meta($product_id,'costom_add_addvanced_text_area_field',true);
+    // if ($text_area_field) {
+    //   echo "<br>";
+    //   echo "<b>Advanced Text Area:</b> ";
+    //   print_r($text_area_field); 
+    // }    
    
 
-    $checkbox_field=get_post_meta($product_id,'costom_add_advanced_checkbox_field',true);
-    if ($checkbox_field){
-        echo "<br>";
-        echo "<b>Attributes Checkbox :</b>";
-        print_r($checkbox_field);
-    }
+    // $checkbox_field12=get_post_meta($product_id,'costom_add_advanced_checkbox_field12',true);
+    // if ($checkbox_field12){
+    //     echo "<br>";
+    //     echo "<b>Attributes Checkbox :</b>";
+    //     print_r($checkbox_field12);
+    // }
 
 
-    $radio_btn_value=get_post_meta($product_id,'costom_add_advanced_radio_button_field',true);
-    if($radio_btn_value){
-        echo "<br>";
-       echo "<b>Attributes Redio : </b>";
-       print_r($radio_btn_value);
-    }
+    // $radio_btn_value3=get_post_meta($product_id,'costom_add_advanced_radio_button_field',true);
+    // if($radio_btn_value3){
+    //     echo "<br>";
+    //    echo "<b>Attributes Redio : </b>";
+    //    print_r($radio_btn_value3);
+    // }
 
-    $radio_btn_value=get_post_meta($product_id,'costom_add_attributes_input_field',true);
-    if ($radio_btn_value) {
-        echo "<br>";
-      echo "<b>Attributes Input : </b>";
-      print_r($radio_btn_value);
-    }
+    // $radio_btn_value4=get_post_meta($product_id,'costom_add_attributes_input_field',true);
+    // if ($radio_btn_value4) {
+    //     echo "<br>";
+    //   echo "<b>Attributes Input : </b>";
+    //   print_r($radio_btn_value4);
+    // }
     
 
-    $display_inventory_val=get_post_meta($product_id,'costom_add_attribute_select_field',true);
-    if ($display_inventory_val) {
-        echo "<br>";
-        echo "<b>Attributes Select:</b> ";
-    print_r($display_inventory_val);
-    }
+    // $display_inventory_val=get_post_meta($product_id,'costom_add_attribute_select_field',true);
+    // if ($display_inventory_val) {
+    //     echo "<br>";
+    //     echo "<b>Attributes Select:</b> ";
+    // print_r($display_inventory_val);
+    // }
   
 
-    $text_area_field=get_post_meta($product_id,'costom_add_attributes_text_area_field',true);
-    if ($text_area_field) {
-        echo "<br>";
-      echo "<b>Attributes Text Area:</b> ";
-      print_r($text_area_field); 
-    }
+    // $text_area_field=get_post_meta($product_id,'costom_add_attributes_text_area_field',true);
+    // if ($text_area_field) {
+    //     echo "<br>";
+    //   echo "<b>Attributes Text Area:</b> ";
+    //   print_r($text_area_field); 
+    // }
 
-    $checkbox_field=get_post_meta($product_id,'costom_add_attributes_checkbox_field',true);
-    if ($checkbox_field) {
-        echo "<br>";
-        echo "<b>Attributes Checkbox :</b>";
-        print_r($checkbox_field);
-    }
+    // $checkbox_field01=get_post_meta($product_id,'costom_add_attributes_checkbox_field',true);
+    // if ($checkbox_field01) {
+    //     echo "<br>";
+    //     echo "<b>Attributes Checkbox :</b>";
+    //     print_r($checkbox_field01);
+    // }
 
-    $radio_btn_value=get_post_meta($product_id,'costom_add_attributes_radio_button_field',true);
-    if($radio_btn_value){
-        echo "<br>";
-       echo "<b>Attributes Redio : </b>";
-       print_r($radio_btn_value);
-    }
+    // $radio_btn_value5=get_post_meta($product_id,'costom_add_attributes_radio_button_field',true);
+    // if($radio_btn_value5){
+    //     echo "<br>";
+    //    echo "<b>Attributes Redio : </b>";
+    //    print_r($radio_btn_value5);
+    // }
 
-    $radio_btn_value=get_post_meta($product_id,'costom_add_linked_radio_button_field',true);
-    if ($radio_btn_value){
-        echo "<br>";
-       echo "<b>Linked Product Redio : </b>";
-       print_r($radio_btn_value);
-    }
+    // $radio_btn_value6=get_post_meta($product_id,'costom_add_linked_radio_button_field',true);
+    // if ($radio_btn_value6){
+    //     echo "<br>";
+    //    echo "<b>Linked Product Redio : </b>";
+    //    print_r($radio_btn_value6);
+    // }
 }
 add_action('woocommerce_single_product_summary','woocommerce_add_custom_input_text_field_general_section_display_field');
 
@@ -804,14 +802,6 @@ add_shortcode('load_more_product','load_more_product_function');
 function load_more_product_function(){
    //global $wp_query;
 
-  // $pod_page = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-  // $total   = isset( $total ) ? $total : wc_get_loop_prop( 'total_pages' );
-  // $current = isset( $current ) ? $current : wc_get_loop_prop( 'current_page' );
-  // $total_posts = $wp_query->found_posts;
-  // echo "<pre>";
-  // echo "Totals : "; 
-  // print_r($total_posts);
-
    ?>
 
     <div class="btn-group text-center">
@@ -838,7 +828,7 @@ function js_add_for_loadmore_ooter(){
               type: 'POST',
               data: {
                 'action': 'load_more_action',
-                'pod_page':pod_page
+                pod_page:pod_page
 
               },
               success: function(load_more_res) {
@@ -862,22 +852,14 @@ add_action( 'wp_ajax_nopriv_load_more_action','wp_ajax_load_more_action_function
 
 function wp_ajax_load_more_action_function(){
     $pod_page_aj=$_POST['pod_page'];
-    // echo "<pre>";
-    // print_r($pod_page_aj);
-    // echo "<pre>";
-    // die();
-   // $post_id=25;
+    
     $post_id[] = $post->ID;
     $pod_load_arg = array(
          'post_type'=>'product',
          'posts_per_page' => 4,
-         'paged'=>$pod_page_aj ,
-         'orderby'   => 'title',
-         'order'  => 'ASC',
-         'post__not_in'=>$post_id,
-
-        // 'orderby' => 'post_date',
-        // 'order' => 'DESC',
+         'paged'=>$pod_page_aj,
+         'orderby' => 'post_date',
+         'order' => 'DESC',
     );
     $podcast_load_posts=new WP_Query($pod_load_arg);
     echo '<div class="main-blog-box row">';     
@@ -890,4 +872,192 @@ function wp_ajax_load_more_action_function(){
     }
     echo '</div> ';
     die();
+}
+
+/*** Custom Hook******/
+
+add_action('woocommerce_custom_filter_shop_loop','woocommerce_custom_filter_shop_loop_function');
+
+function woocommerce_custom_filter_shop_loop_function(){
+  ?>
+  <select class="form-select" id="custom_filter">
+      <option value="all_products">All Products</option>
+      <option value="letest">Sort By Latest</option>
+      <option value="low_to_high">Price(Low to High)</option>
+      <option value="high_to_low">Price(High to High)</option>  
+      <option value="featured">Featured Products</option>      
+  </select>
+    <?php 
+}
+
+add_action('wp_footer','custom_filter_function');
+
+function custom_filter_function(){
+    ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery('#custom_filter').on('change',function(){
+                var filterval= jQuery('#custom_filter').val();
+                var ajax_url="<?php echo admin_url('admin-ajax.php'); ?>";
+
+                if (filterval=='all_products') {
+                    jQuery(".load_more").css("display", "block");
+                }else{
+                    jQuery(".load_more").css("display", "none");
+                }
+                
+                jQuery.ajax({
+                  url: ajax_url,
+                  type: 'POST',
+                  data: {
+                    'action': 'custom_product_filter',
+                    filterval : filterval,
+                  },
+                  success: function(filter_response) {
+                   jQuery('.products').html(filter_response);
+                    //jQuery('.products').append(filter_response);
+                  },
+                });
+            })
+        })
+    </script>
+    <?php
+}
+
+
+add_action( 'wp_ajax_custom_product_filter', 'custom_product_filter_function' );
+add_action( 'wp_ajax_nopriv_custom_product_filter', 'custom_product_filter_function' );
+
+function custom_product_filter_function(){
+    $filter=$_POST['filterval'];
+
+    if ($filter=='all_products') {
+        
+        $pod_load_arg = array(
+             'post_type'=>'product',
+             'posts_per_page' => 13,
+             'orderby' => 'post_date',
+             'order' => 'DESC',
+        );
+        $podcast_load_posts=new WP_Query($pod_load_arg);
+        echo '<div class="main-blog-box row">';     
+        if($podcast_load_posts->have_posts()){
+            while($podcast_load_posts->have_posts()){
+                $podcast_load_posts->the_post();
+                wc_get_template_part( 'content', 'product' );  
+            }
+            wp_reset_postdata();
+        }
+        echo '</div> ';
+        die();
+    }
+    if ($filter=='letest') {
+       
+       $pod_load_arg = array(
+             'post_type'=>'product',
+             'posts_per_page' => -1,             
+             'orderby' => 'post_date',
+             'order' => 'DESC',
+        );
+        $podcast_load_posts=new WP_Query($pod_load_arg);
+        echo '<div class="main-blog-box row">';     
+        if($podcast_load_posts->have_posts()){
+            while($podcast_load_posts->have_posts()){
+                $podcast_load_posts->the_post();
+                wc_get_template_part( 'content', 'product' );  
+            }
+            wp_reset_postdata();
+        }
+        echo '</div> '; 
+        die();
+    }
+    if ($filter=='low_to_high'){
+        $pod_load_arg = array(
+             'post_type'=>'product',
+             'posts_per_page' => -1,
+             'meta_key' => '_price',
+             'orderby' => 'meta_value_num',   //price metakey is '_price' !
+             'order' => 'asc'
+             // 'orderby' => 'post_date',
+             // 'order' => 'DESC',
+             // 'meta_query' => array(
+             //    // 'relation' => 'OR',
+             //        array(
+             //            array(
+             //                'meta_key' => '_price',
+             //                'value' => 13,
+             //                'orderby'=>'_price',
+             //                'order'=>'asc'
+                            
+             //            ),
+             //        ),
+             // ),
+        );
+        $podcast_load_posts=new WP_Query($pod_load_arg);
+         echo '<div class="main-blog-box row">';     
+        if($podcast_load_posts->have_posts()){
+            while($podcast_load_posts->have_posts()){
+                $podcast_load_posts->the_post();
+                wc_get_template_part( 'content', 'product' );  
+            }
+            wp_reset_postdata();
+        }
+        echo '</div> '; 
+        die();
+    }
+    if ($filter=='high_to_low'){
+        $pod_load_arg = array(
+             'post_type'=>'product',
+             'posts_per_page' => -1,
+             'meta_key' => '_price',
+             'orderby' => 'meta_value_num',   //price metakey is '_price' !
+             'order' => 'DESC'
+        );
+        $podcast_load_posts=new WP_Query($pod_load_arg);
+         echo '<div class="main-blog-box row">';     
+        if($podcast_load_posts->have_posts()){
+            while($podcast_load_posts->have_posts()){
+                $podcast_load_posts->the_post();
+                wc_get_template_part( 'content', 'product' );  
+            }
+            wp_reset_postdata();
+        }
+        echo '</div> '; 
+        die();
+    }
+    if ($filter=='featured'){
+        //echo do_shortcode('[featured_products]');
+        $pod_load_arg = array(
+            'post_type' => 'product',
+            'posts_per_page'      => -1,
+            'tax_query' => array(
+          //'relation' => 'AND',
+                array(
+                'taxonomy' => 'product_visibility',
+                'field' => 'name',
+                'terms' => 'featured',
+                'operator' => 'IN',
+                ),
+          ),
+        );
+        $podcast_load_posts=new WP_Query($pod_load_arg);
+         echo '<div class="main-blog-box row">';     
+        if($podcast_load_posts->have_posts()){
+            while($podcast_load_posts->have_posts()){
+                $podcast_load_posts->the_post();
+                wc_get_template_part( 'content', 'product' );  
+            }
+            wp_reset_postdata();
+        }
+        echo '</div> '; 
+        die();
+    }
+    die();
+}
+
+/*Redirect on Cart Page from Shop Page*/
+add_filter('woocommerce_add_to_cart_redirect', 'change_woocommerce_add_to_cart_redirect_url');
+function change_woocommerce_add_to_cart_redirect_url($url){
+    echo $url = wc_get_cart_url();
+    return $url;
 }

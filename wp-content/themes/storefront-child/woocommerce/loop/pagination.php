@@ -28,7 +28,6 @@ if ( $total <= 1 ) {
 	return;
 }
 ?>
-
 <nav class="woocommerce-pagination test_class">
 	<?php
 	// echo paginate_links(
