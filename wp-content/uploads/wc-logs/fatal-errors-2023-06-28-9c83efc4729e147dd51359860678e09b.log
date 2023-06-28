@@ -1,0 +1,930 @@
+2023-06-28T05:51:34+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:190
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 190
+
+2023-06-28T06:57:35+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Gateway_PHP_Custom_class::load_shipping_method_options() in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:104
+Stack trace:
+#0 /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php(41): WC_Gateway_PHP_Custom_class->init_form_fields()
+#1 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Gateway_PHP_Custom_class->__construct()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(70): WC_Payment_Gateways->init()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(43): WC_Payment_Gateways->__construct()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-woocommerce.php(944): WC_Payment_Gateways::instance()
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-woocommerce.php(175): WooCommerce->payment_gateways()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/Payments.php(93): WooCommerce->__get()
+#7 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/Payments.php(71): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\Payments::has_gateways()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php(92): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\Payments->is_complete()
+#9 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(304): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\WooCommercePayments->can_view()
+#10 [internal function]: Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->Automattic\WooCommerce\Admin\Features\OnboardingTasks\{closure}()
+#11 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(301): array_filter()
+#12 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(171): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->get_viewable_tasks()
+#13 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(337): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->is_visible()
+#14 [internal function]: Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::Automattic\WooCommerce\Admin\Features\OnboardingTasks\{closure}()
+#15 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(334): array_filter()
+#16 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(443): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::get_visible()
+#17 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::task_list_preloaded_settings()
+#18 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#19 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Internal/Admin/WCAdminSharedSettings.php(61): apply_filters()
+#20 /var/www/html/wp1/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Assets/AssetDataRegistry.php(282): Automattic\WooCommerce\Internal\Admin\WCAdminSharedSettings->Automattic\WooCommerce\Internal\Admin\{closure}()
+#21 /var/www/html/wp1/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Assets/AssetDataRegistry.php(383): Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry->execute_lazy_data()
+#22 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry->enqueue_asset_data()
+#23 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#24 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#25 /var/www/html/wp1/wp-includes/script-loader.php(2177): do_action()
+#26 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_footer_scripts()
+#27 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#28 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#29 /var/www/html/wp1/wp-login.php(1290): do_action()
+#30 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 104
+
+2023-06-28T06:57:37+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Gateway_PHP_Custom_class::load_shipping_method_options() in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:104
+Stack trace:
+#0 /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php(41): WC_Gateway_PHP_Custom_class->init_form_fields()
+#1 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Gateway_PHP_Custom_class->__construct()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(70): WC_Payment_Gateways->init()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(43): WC_Payment_Gateways->__construct()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-woocommerce.php(944): WC_Payment_Gateways::instance()
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-woocommerce.php(175): WooCommerce->payment_gateways()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/Payments.php(93): WooCommerce->__get()
+#7 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/Payments.php(71): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\Payments::has_gateways()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php(92): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\Payments->is_complete()
+#9 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(304): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\WooCommercePayments->can_view()
+#10 [internal function]: Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->Automattic\WooCommerce\Admin\Features\OnboardingTasks\{closure}()
+#11 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(301): array_filter()
+#12 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(171): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->get_viewable_tasks()
+#13 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(337): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->is_visible()
+#14 [internal function]: Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::Automattic\WooCommerce\Admin\Features\OnboardingTasks\{closure}()
+#15 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(334): array_filter()
+#16 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(443): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::get_visible()
+#17 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::task_list_preloaded_settings()
+#18 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#19 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Internal/Admin/WCAdminSharedSettings.php(61): apply_filters()
+#20 /var/www/html/wp1/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Assets/AssetDataRegistry.php(282): Automattic\WooCommerce\Internal\Admin\WCAdminSharedSettings->Automattic\WooCommerce\Internal\Admin\{closure}()
+#21 /var/www/html/wp1/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Assets/AssetDataRegistry.php(383): Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry->execute_lazy_data()
+#22 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry->enqueue_asset_data()
+#23 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#24 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#25 /var/www/html/wp1/wp-includes/script-loader.php(2177): do_action()
+#26 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_footer_scripts()
+#27 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#28 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#29 /var/www/html/wp1/wp-login.php(1290): do_action()
+#30 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 104
+
+2023-06-28T06:57:38+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Gateway_PHP_Custom_class::load_shipping_method_options() in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:104
+Stack trace:
+#0 /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php(41): WC_Gateway_PHP_Custom_class->init_form_fields()
+#1 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Gateway_PHP_Custom_class->__construct()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(70): WC_Payment_Gateways->init()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(43): WC_Payment_Gateways->__construct()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-woocommerce.php(944): WC_Payment_Gateways::instance()
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-woocommerce.php(175): WooCommerce->payment_gateways()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/Payments.php(93): WooCommerce->__get()
+#7 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/Payments.php(71): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\Payments::has_gateways()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php(92): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\Payments->is_complete()
+#9 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(304): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\WooCommercePayments->can_view()
+#10 [internal function]: Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->Automattic\WooCommerce\Admin\Features\OnboardingTasks\{closure}()
+#11 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(301): array_filter()
+#12 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(239): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->get_viewable_tasks()
+#13 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(398): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->is_complete()
+#14 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(420): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::setup_tasks_remaining()
+#15 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::menu_task_count()
+#16 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#17 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#18 /var/www/html/wp1/wp-admin/includes/menu.php(155): do_action()
+#19 /var/www/html/wp1/wp-admin/menu.php(420): require_once('...')
+#20 /var/www/html/wp1/wp-admin/admin.php(158): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 104
+
+2023-06-28T06:57:39+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Gateway_PHP_Custom_class::load_shipping_method_options() in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:104
+Stack trace:
+#0 /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php(41): WC_Gateway_PHP_Custom_class->init_form_fields()
+#1 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(97): WC_Gateway_PHP_Custom_class->__construct()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(70): WC_Payment_Gateways->init()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(43): WC_Payment_Gateways->__construct()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-woocommerce.php(944): WC_Payment_Gateways::instance()
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-woocommerce.php(175): WooCommerce->payment_gateways()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/Payments.php(93): WooCommerce->__get()
+#7 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/Payments.php(71): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\Payments::has_gateways()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php(92): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\Payments->is_complete()
+#9 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(304): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks\WooCommercePayments->can_view()
+#10 [internal function]: Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->Automattic\WooCommerce\Admin\Features\OnboardingTasks\{closure}()
+#11 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(301): array_filter()
+#12 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskList.php(239): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->get_viewable_tasks()
+#13 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(398): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskList->is_complete()
+#14 /var/www/html/wp1/wp-content/plugins/woocommerce/src/Admin/Features/OnboardingTasks/TaskLists.php(420): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::setup_tasks_remaining()
+#15 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskLists::menu_task_count()
+#16 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#17 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#18 /var/www/html/wp1/wp-admin/includes/menu.php(155): do_action()
+#19 /var/www/html/wp1/wp-admin/menu.php(420): require_once('...')
+#20 /var/www/html/wp1/wp-admin/admin.php(158): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 104
+
+2023-06-28T07:35:24+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:162
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 162
+
+2023-06-28T07:35:38+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:162
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 162
+
+2023-06-28T09:02:35+00:00 CRITICAL Uncaught TypeError: uasort(): Argument #1 ($array) must be of type array, null given in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-countries.php:767
+Stack trace:
+#0 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-countries.php(767): uasort()
+#1 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-countries.php(1586): WC_Countries->get_default_address_fields()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(549): WC_Countries->get_country_locale()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-countries.php on line 767
+
+2023-06-28T09:03:27+00:00 CRITICAL Uncaught TypeError: uasort(): Argument #1 ($array) must be of type array, null given in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-countries.php:767
+Stack trace:
+#0 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-countries.php(767): uasort()
+#1 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-countries.php(1586): WC_Countries->get_default_address_fields()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(549): WC_Countries->get_country_locale()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(465): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(632): WC_Frontend_Scripts::localize_script()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-includes/script-loader.php(2146): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): wp_print_head_scripts()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/general-template.php(3049): do_action()
+#13 /var/www/html/wp1/wp-content/themes/storefront/header.php(18): wp_head()
+#14 /var/www/html/wp1/wp-includes/template.php(783): require_once('...')
+#15 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#16 /var/www/html/wp1/wp-includes/general-template.php(48): locate_template()
+#17 /var/www/html/wp1/wp-content/themes/storefront/page.php(13): get_header()
+#18 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#19 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#20 /var/www/html/wp1/index.php(17): require('...')
+#21 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-countries.php on line 767
+
+2023-06-28T09:07:36+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "misha_print_all_fields" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(300): apply_filters()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(34): WC_Checkout->get_checkout_fields()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(359): wc_get_template()
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output()
+#7 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper()
+#8 /var/www/html/wp1/wp-includes/shortcodes.php(355): WC_Shortcodes::checkout()
+#9 [internal function]: do_shortcode_tag()
+#10 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#11 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): do_shortcode()
+#12 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#13 /var/www/html/wp1/wp-includes/post-template.php(255): apply_filters()
+#14 /var/www/html/wp1/wp-content/themes/storefront/inc/storefront-template-functions.php(352): the_content()
+#15 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_page_content()
+#16 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#17 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#18 /var/www/html/wp1/wp-content/themes/storefront/content-page.php(18): do_action()
+#19 /var/www/html/wp1/wp-includes/template.php(785): require('...')
+#20 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#21 /var/www/html/wp1/wp-includes/general-template.php(204): locate_template()
+#22 /var/www/html/wp1/wp-content/themes/storefront/page.php(24): get_template_part()
+#23 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#24 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#25 /var/www/html/wp1/index.php(17): require('...')
+#26 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 308
+
+2023-06-28T09:49:54+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class WC_Gateway_PHP_Custom_class does not have a method "thankyou_page" in /var/www/html/wp1/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/templates/checkout/thankyou.php(79): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(322): wc_get_template()
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output()
+#7 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper()
+#8 /var/www/html/wp1/wp-includes/shortcodes.php(355): WC_Shortcodes::checkout()
+#9 [internal function]: do_shortcode_tag()
+#10 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#11 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): do_shortcode()
+#12 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#13 /var/www/html/wp1/wp-includes/post-template.php(255): apply_filters()
+#14 /var/www/html/wp1/wp-content/themes/storefront/inc/storefront-template-functions.php(352): the_content()
+#15 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_page_content()
+#16 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#17 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#18 /var/www/html/wp1/wp-content/themes/storefront/content-page.php(18): do_action()
+#19 /var/www/html/wp1/wp-includes/template.php(785): require('...')
+#20 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#21 /var/www/html/wp1/wp-includes/general-template.php(204): locate_template()
+#22 /var/www/html/wp1/wp-content/themes/storefront/page.php(24): get_template_part()
+#23 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#24 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#25 /var/www/html/wp1/index.php(17): require('...')
+#26 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 308
+
+2023-06-28T09:49:55+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class WC_Gateway_PHP_Custom_class does not have a method "thankyou_page" in /var/www/html/wp1/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/templates/checkout/thankyou.php(79): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(322): wc_get_template()
+#5 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received()
+#6 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output()
+#7 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper()
+#8 /var/www/html/wp1/wp-includes/shortcodes.php(355): WC_Shortcodes::checkout()
+#9 [internal function]: do_shortcode_tag()
+#10 /var/www/html/wp1/wp-includes/shortcodes.php(227): preg_replace_callback()
+#11 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): do_shortcode()
+#12 /var/www/html/wp1/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#13 /var/www/html/wp1/wp-includes/post-template.php(255): apply_filters()
+#14 /var/www/html/wp1/wp-content/themes/storefront/inc/storefront-template-functions.php(352): the_content()
+#15 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): storefront_page_content()
+#16 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#17 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#18 /var/www/html/wp1/wp-content/themes/storefront/content-page.php(18): do_action()
+#19 /var/www/html/wp1/wp-includes/template.php(785): require('...')
+#20 /var/www/html/wp1/wp-includes/template.php(718): load_template()
+#21 /var/www/html/wp1/wp-includes/general-template.php(204): locate_template()
+#22 /var/www/html/wp1/wp-content/themes/storefront/page.php(24): get_template_part()
+#23 /var/www/html/wp1/wp-includes/template-loader.php(106): include('...')
+#24 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#25 /var/www/html/wp1/index.php(17): require('...')
+#26 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 308
+
+2023-06-28T09:50:44+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class WC_Gateway_PHP_Custom_class does not have a method "email_instructions" in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/templates/emails/email-order-details.php(22): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-emails.php(415): wc_get_template()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Emails->order_details()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/templates/emails/admin-new-order.php(35): do_action()
+#9 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('...')
+#10 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/wc-core-functions.php(364): wc_get_template()
+#11 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(126): wc_get_template_html()
+#12 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(581): WC_Email_New_Order->get_content_html()
+#13 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(111): WC_Email->get_content()
+#14 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Email_New_Order->trigger()
+#15 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#16 /var/www/html/wp1/wp-includes/plugin.php(565): WP_Hook->do_action()
+#17 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-emails.php(170): do_action_ref_array()
+#18 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_Emails::send_transactional_email()
+#19 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#20 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#21 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-order.php(396): do_action()
+#22 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-order.php(245): WC_Order->status_transition()
+#23 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-order.php(357): WC_Order->save()
+#24 /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php(142): WC_Order->update_status()
+#25 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1050): WC_Gateway_PHP_Custom_class->process_payment()
+#26 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1279): WC_Checkout->process_order_payment()
+#27 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#28 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#29 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#30 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#31 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#32 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#33 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#34 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#35 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#36 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#37 /var/www/html/wp1/index.php(17): require('...')
+#38 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+
+2023-06-28T10:53:19+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:187
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 187
+
+2023-06-28T10:54:08+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:187
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 187
+
+2023-06-28T10:55:43+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:187
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 187
+
+2023-06-28T10:55:47+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:187
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 187
+
+2023-06-28T10:55:57+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:187
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 187
+
+2023-06-28T10:56:10+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:191
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 191
+
+2023-06-28T10:58:46+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:189
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 189
+
+2023-06-28T10:58:48+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:189
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 189
+
+2023-06-28T11:02:16+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:185
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 185
+
+2023-06-28T11:02:31+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:185
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 185
+
+2023-06-28T11:02:43+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:185
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 185
+
+2023-06-28T11:05:30+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:200
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 200
+
+2023-06-28T11:05:39+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:200
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 200
+
+2023-06-28T11:07:21+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:196
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 196
+
+2023-06-28T11:07:25+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:196
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 196
+
+2023-06-28T11:07:49+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:196
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 196
+
+2023-06-28T11:09:20+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:198
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 198
+
+2023-06-28T11:14:10+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:198
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 198
+
+2023-06-28T11:14:30+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:198
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 198
+
+2023-06-28T11:14:34+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:198
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 198
+
+2023-06-28T11:16:24+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:194
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 194
+
+2023-06-28T11:16:33+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:198
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 198
+
+2023-06-28T11:20:15+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php:198
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): process_custom_payment()
+#1 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1236): do_action()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-content/plugins/Custom-Payment-Gateway/index.php on line 198
+
+2023-06-28T11:33:57+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_payment_update_order_meta" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(456): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1256): WC_Checkout->create_order()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+
+2023-06-28T11:34:05+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_payment_update_order_meta" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(456): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1256): WC_Checkout->create_order()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+
+2023-06-28T11:34:13+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_payment_update_order_meta" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(456): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1256): WC_Checkout->create_order()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+
+2023-06-28T11:34:32+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_payment_update_order_meta" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(456): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1256): WC_Checkout->create_order()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+
+2023-06-28T11:34:38+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_payment_update_order_meta" not found or invalid function name in /var/www/html/wp1/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#1 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#2 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(456): do_action()
+#3 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1256): WC_Checkout->create_order()
+#4 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(507): WC_Checkout->process_checkout()
+#5 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::checkout()
+#6 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#7 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/html/wp1/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(96): do_action()
+#9 /var/www/html/wp1/wp-includes/class-wp-hook.php(308): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/wp1/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#11 /var/www/html/wp1/wp-includes/plugin.php(517): WP_Hook->do_action()
+#12 /var/www/html/wp1/wp-includes/template-loader.php(13): do_action()
+#13 /var/www/html/wp1/wp-blog-header.php(19): require_once('...')
+#14 /var/www/html/wp1/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/html/wp1/wp-includes/class-wp-hook.php on line 310
+

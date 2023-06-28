@@ -978,20 +978,6 @@ function custom_product_filter_function(){
              'meta_key' => '_price',
              'orderby' => 'meta_value_num',   //price metakey is '_price' !
              'order' => 'asc'
-             // 'orderby' => 'post_date',
-             // 'order' => 'DESC',
-             // 'meta_query' => array(
-             //    // 'relation' => 'OR',
-             //        array(
-             //            array(
-             //                'meta_key' => '_price',
-             //                'value' => 13,
-             //                'orderby'=>'_price',
-             //                'order'=>'asc'
-                            
-             //            ),
-             //        ),
-             // ),
         );
         $podcast_load_posts=new WP_Query($pod_load_arg);
          echo '<div class="main-blog-box row">';     
