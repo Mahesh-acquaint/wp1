@@ -168,9 +168,7 @@ function init_custom_gateway_class(){
             $order_note1 = 'This will add as a private note.';
             $order->add_order_note( $order_note ); // This will add as a private note.
             $order->add_order_note( $order_note1, 1 );
-
-            
-         
+               
 
             $status = 'wc-' === substr( $this->order_status, 0, 3 ) ? substr( $this->order_status, 3 ) : $this->order_status;
 
@@ -219,3 +217,4 @@ function custom_checkout_field_display_admin_order_meta($order){
     echo '<p><strong>'.__( 'Mobile Number' ).':</strong> ' . $mobile . '</p>';
     echo '<p><strong>'.__( 'Transaction ID').':</strong> ' . $transaction . '</p>';
 }
+
